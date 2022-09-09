@@ -16,16 +16,16 @@ for(let i = 0; i<accordionItem.length; i++){
 }
 function ChangeActiveSlide(){
 if (accordionItem[0].classList.contains('active') && accordionItem[0].classList.contains('hidden') == 0){
- accordion.style.backgroundImage = "url(../img/russian.png)"
+ accordion.style.backgroundImage = "url(./img/russian.png)"
 }
  if (accordionItem[1].classList.contains('active') && accordionItem[1].classList.contains('hidden') == 0){
-  accordion.style.backgroundImage = "url('../img/international.png')"
+  accordion.style.backgroundImage = "url('./img/international.png')"
  }
  if (accordionItem[2].classList.contains('active') && accordionItem[2].classList.contains('hidden') == 0) {
-  accordion.style.backgroundImage = "url('../img/infrastructura.png')"
+  accordion.style.backgroundImage = "url('./img/infrastructura.png')"
  }
  if (accordionItem[3].classList.contains('active') && accordionItem[3].classList.contains('hidden') == 0) {
-  accordion.style.backgroundImage = "url('../img/strategy.png')"
+  accordion.style.backgroundImage = "url('./img/strategy.png')"
  }
 }
 
