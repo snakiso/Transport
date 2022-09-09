@@ -1,0 +1,111 @@
+.news
+ min-height: 100vh
+ background-image: url(../img/bg-second.png)
+ background-repeat: no-repeat
+ background-size: cover
+ &__wrapper
+  max-width: 1300px
+  margin: auto
+  position: relative
+ &__block
+  max-width: 890px
+  display: flex
+  .first-column, .second-column
+   display: flex
+   flex-direction: column 
+  .arrow-box 
+   width: 445px
+   height: 225px
+   position: relative
+   p
+    font-size: 20px
+    color: #1DA29F
+    text-transform: uppercase
+    margin-top: 50px
+   .next-news
+    position: absolute
+    bottom: 45px
+    left: 45px
+    cursor: pointer
+   .prev-news
+    position: absolute
+    top: 45px
+    right: 45px 
+    cursor: pointer
+ &__box
+  width: 445px
+  background: #fff 
+  height: 225px
+  display: flex
+  .inner-box
+   max-width: calc(100% - 60px)
+   margin: auto
+ &__box.bg-dark
+  background: #272743
+  .news__rubric
+    
+   color: #1DA29F
+  .news__content
+   color: #fff 
+ &__box.bg-purple
+  background: #4E3079
+  .news__rubric
+   color: #1DA29F
+  .news__content
+   color: #fff 
+ &__date
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .date
+    transition: all .3s
+  p
+   margin: 0
+   color: #878794
+   font-size: 14px
+  span
+   display: block
+   content: ''
+   width: 10px
+   height: 10px
+   background: #1DA29F 
+   border-radius: 50%
+ &__rubric
+  font-family: 'Heliosc-bold', sans-serif
+  font-weight: 700
+  font-size: 18px
+  color: #292A62 
+ &__name
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+  transition: all .3s
+  transition-delay: .2s
+ &__content
+  color: #272743
+  max-width: 385px
+  height: 72px
+  overflow: hidden 
+  transition: all .3s
+  transition-delay: .4s
+ .read-more
+  color: #1A88C9
+  text-decoration: underline  
+  font-size: 14px
+  margin-top: 20px
+  display: inline-block
+ .rotate-title
+  transform: rotate(-90deg)
+  position: absolute
+  bottom: -200px
+  right: -290px
+  h2,h3
+    font-family: 'Bebas Neue'
+    font-weight: 700
+    text-transform: uppercase
+    margin: 0
+    font-size: 133px
+  h3   
+    font-size: 130px
+    -webkit-text-stroke: 1px #1DA29F
+    color: rgb(0,0 ,0, 0 )
