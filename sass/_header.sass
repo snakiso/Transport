@@ -53,6 +53,12 @@
    width: 34px
    top: 0
    border-radius: 3px
+   transition: all .1s
   .hamburger-line:after
    bottom: 2px
    top: auto 
+ &__burger.active
+  .hamburger-line:before, .hamburger-line:after
+    top: 50%
+
+

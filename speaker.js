@@ -53,11 +53,11 @@ async function checkedActive(){
 
 
 function swiperMoveDown(){
+  if (step == -1870) {
+    step = 85
+  }
  step = step - 85
  swiper.style.transform = `translateY(${step}px)`
- if (step == -1870) {
-  step = 85
-}
 } 
 
 
@@ -103,3 +103,15 @@ function addActiveUp() {
   checkedActive()
   swiperMoveUp()
  })
+
+for(let i = 0; i < names.length; i++){
+  names[i].addEventListener('click', () => {
+    random()
+    removeClass()
+    names[i].classList.add('active')
+    step = -i*85
+    index = i
+    swiper.style.transform = `translateY(${-i*85}px)`
+    checkedActive()
+  })
+}

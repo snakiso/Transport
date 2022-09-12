@@ -1,0 +1,116 @@
+.popNav
+    min-height: 100vh
+    width: 100%
+    background-image: url(../img/bg-nav.png)
+    background-repeat: no-repeat
+    background-size: cover
+    position: fixed
+    z-index: 20
+    right: -100%
+    transition-delay: 1s
+    transition: all .5s
+    display: flex
+    align-items: center
+    &__close-btn
+        position: absolute
+        top: 50px
+        right: 50px
+        cursor: pointer
+    .nav
+        padding: 0 60px
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100%
+        img
+            padding-bottom: 40px
+    .nav__ul_upper
+        display: grid
+        grid-template-areas: "nav_1 nav_2 nav_3 nav_4" "nav_1 nav_5 nav_6 nav_7"
+    .nav__ul_inner
+        padding-top: 20px    
+    .nav__li_upper-1
+        grid-area: nav_1
+        position: relative
+        height: 780px
+        .nav__img
+            position: absolute
+            bottom: 0
+            left: 0
+            img
+                padding: 0
+                display: block
+    .nav__li_upper-1:hover
+        transform: translateX(-20px)  
+    .nav__li_upper-2, .nav__li_upper-3, .nav__li_upper-4, .nav__li_upper-5, .nav__li_upper-6, .nav__li_upper-7
+        .nav__img
+            position: absolute
+            opacity: 0.2     
+            bottom: 0
+            right: 40px    
+            transition: all .2s
+    .nav__li_upper-2
+        grid-area: nav_2
+        position: relative
+    .nav__li_upper-3
+        grid-area: nav_3
+        position: relative
+    .nav__li_upper-4
+        grid-area: nav_4
+        position: relative
+    .nav__li_upper-2:hover, .nav__li_upper-3:hover, .nav__li_upper-4:hover
+        transform: translateY(-20px)
+        .nav__img
+            opacity: 1
+    .nav__li_upper-5:hover, .nav__li_upper-6:hover, .nav__li_upper-7:hover
+        transform: translateY(20px) 
+        .nav__img
+            opacity: 1   
+    .nav__li_upper-5
+        grid-area: nav_5
+        position: relative
+    .nav__li_upper-6
+        grid-area: nav_6
+        position: relative
+    .nav__li_upper-7
+        grid-area: nav_7
+        position: relative
+    .nav__li_upper
+        background-color: rgba(8,16,43,0.6)
+        padding: 40px
+        border: 1px solid transparent
+        border-image: linear-gradient(89.99deg, rgba(80, 80, 153, 0.34) 0.01%, rgba(83, 83, 156, 0.68) 22.92%, rgba(32, 139, 201, 0.68) 50.52%, rgba(29, 162, 158, 0.68) 99.99%)
+        border-image-slice: 1
+        position: relative
+        transition: 0.2s
+        top: 0
+        left: 0
+    .nav__li_upper:hover
+        .nav__a_upper   
+            color: #1DA29F 
+    .nav__li_inner
+        padding: 5px 0        
+    .nav__li
+        flex: 1
+        width: 420px
+        box-sizing: border-box
+    .nav__a
+        font-family: 'Bebas Neue'
+        display: block
+        font-size: 40px
+        font-weight: 700
+        position: relative
+    .nav__a_inner:hover
+        color: #1DA29F    
+    .nav__a:before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 1px
+        bottom: 0
+        left: 0
+        background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.34) 0.01%, rgba(83, 83, 156, 0.68) 22.92%, rgba(32, 139, 201, 0.68) 50.52%, rgba(29, 162, 158, 0.68) 99.99%)
+
+.popNav.active
+    right: 0%
+    transition-delay: .1s

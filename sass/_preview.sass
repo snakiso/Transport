@@ -60,6 +60,11 @@
    display: block
    margin: 0 8px
  .show-date
+  position: relative
+  transition: all 1s
+  transition-delay: 1s
+  opacity: 1
+  transform: translateX(0px)  
   padding-left: 24.6%
   text-transform: uppercase
   margin-top: 130px
@@ -77,6 +82,9 @@
       font-weight: 700
   .register-btn
     margin-top: 50px
+.show-date.faded
+  opacity: 0
+  transform: translateX(-100px)      
 @media screen and ( max-width: 1920px )
   .preview
     &__title
