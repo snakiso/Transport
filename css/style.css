@@ -1079,6 +1079,8 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
     display: block;
+    width: 320px;
+    margin: auto;
   }
   .themes__wrapper-mobile .first-line, .themes__wrapper-mobile .second-line, .themes__wrapper-mobile .third-line, .themes__wrapper-mobile .fourth-line, .themes__wrapper-mobile .fifth-line, .themes__wrapper-mobile .sixth-line, .themes__wrapper-mobile .seventh-line, .themes__wrapper-mobile .eighth-line, .themes__wrapper-mobile .ninth-line, .themes__wrapper-mobile .tenth-line {
     height: 70px;
