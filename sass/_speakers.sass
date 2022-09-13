@@ -4,6 +4,14 @@
  background-repeat: no-repeat
  background-size: cover
  display: flex
+ position: relative
+ .decor-third
+  position: absolute
+  right: 0
+ .decor-fourth
+  position: absolute
+  left: 0
+  bottom: 100px
  &__wrapper
   max-width: 1300px
   margin: auto
@@ -132,9 +140,16 @@
    font-family: 'Heliosc', sans-serif
    font-size: 18px
 
-
-@media screen and ( max-width: 1440px )  
+@media screen and ( max-width: 1920px )  
+  .speakers
+    .decor-third
+      right: -12%
+    .decor-fourth 
+      left: -12%
+@media screen and ( max-width: 1439px )  
   .speakers 
+    .decor-third, .decor-fourth 
+      display: none
     .speakers-slider
       width: 500px
     &__list
@@ -152,11 +167,29 @@
       display: block
       width: 100%
       font-size: 40px
-      ont-family: 'Bebas Neue'
+      font-family: 'Bebas Neue'
       font-weight: 700
       color: #1A88C9
       padding-left: 15px
       margin-top: 60px
+      position: relative
+    .title-mobile:before, .all-speakers-mobile:before
+       position: absolute
+       content: ''
+       background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.34) 0.01%, rgba(83, 83, 156, 0.68) 22.92%, rgba(32, 139, 201, 0.68) 50.52%, rgba(29, 162, 158, 0.68) 99.99%)
+       height: 5px
+       width: 100%
+       bottom: 13px
+       left: 170px  
+    .title-mobile:after, .all-speakers-mobile:after
+      position: absolute
+      content: ''
+      width: 5px
+      height: 5px
+      background: white
+      border-radius: 50% 
+      bottom: 13px
+      left: 170px   
     .all-speakers-mobile  
       display: block
       width: 100%
@@ -164,6 +197,18 @@
       padding-left: 15px
       margin-bottom: 60px
       margin-top: 60px
+      position: relative
+    .all-speakers-mobile:after
+      top: -20px
+      bottom: auto
+      right: 10%
+      left: auto  
+    .all-speakers-mobile:before
+      bottom: auto
+      top: -20px  
+      left: 0
+      width: 90%
+      transform: rotate(180deg)
     .speakers-slider
       width: 320px
       .swiper-button-next

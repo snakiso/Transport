@@ -67,3 +67,7 @@ closeBtn.addEventListener('click', () => {
     burger.classList.remove('active')
     nav.classList.remove('active')
 })
+
+
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);

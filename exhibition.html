@@ -7,6 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="stylesheet" href="./fonts/Bebas/bebasneue.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
    <title>Транспортная неделя</title>
 </head>
 
@@ -161,6 +162,9 @@
       </header>
       <main class="main">
          <section class="preview">
+            <div class="decor-first">
+               <img src="./img/decor-first.png" alt="">
+            </div>
             <div class="back-video">
                <video src="./video.mp4" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" playsinline></video>
             </div>
@@ -279,6 +283,23 @@
             </div>
          </section>
          <section class="themes">
+            <div id="scene" class="scene">
+               <div data-depth="0.2" class="layer">
+                  <img src='./img/layer1.png'>
+               </div>
+               <div data-depth="0.4" class="layer">
+                  <img src='./img/layer2.png'>
+               </div>
+               <div data-depth="0.6" class="layer">
+                  <img src='./img/layer3.png'>
+               </div>
+               <div data-depth="0.8" class="layer">
+                  <img src='./img/layer4.png'>
+               </div>
+            </div>
+            <div class="decor-second">
+               <img src="./img/decor-second.png" alt="">
+            </div>
             <div class="themes__wrapper">
                <div class="first-line">
                   <h3 class="word-bg">Эксперты</h3>
@@ -312,6 +333,46 @@
                   <p>Дискуссии</p>
                   <h4 class="word-bg">Премия</h4>
                   <h2>Инфраструктура</h2>
+               </div>
+            </div>
+            <div class="themes__wrapper-mobile">
+               <div class="first-line">
+                  <h2 class='word-bg'>эксперты</h2>
+                  <p>бизнес</p>
+               </div>
+               <div class="second-line">
+                  <h4>транспорт</h4>
+                  <h3>инновации</h3>
+               </div>
+               <div class="third-line">
+                  <h2 class='word-bg'>знание</h2>
+                  <h3>цифровизация</h3>
+               </div>
+               <div class="fourth-line">
+                  <h2>digital</h2>
+                  <h3 class='word-bg'>выставка</h3>
+               </div>
+               <div class="fifth-line">
+                  <h2 class='word-bg'>форум</h2>
+                  <h4>дискуссии</h4>
+               </div>
+               <div class="sixth-line">
+                  <h3>Технологии</h3>
+               </div>
+               <div class="seventh-line">
+                  <h3>Онлайн/офлайн</h3>
+                  <h4 class='word-bg'>премия</h4>
+               </div>
+               <div class="eighth-line">
+                  <h2 class='word-bg'>Спикеры</h2>
+                  <h3>Безопасность</h3>
+               </div>
+               <div class="ninth-line">
+                  <h2>стратегия</h2>
+                  <h5>скорость</h5>
+               </div>
+               <div class="tenth-line">
+                  <h3 class='word-bg'>представители власти</h3>
                </div>
             </div>
          </section>
@@ -1841,6 +1902,12 @@
             </div>
          </section>
          <section class="speakers">
+            <div class="decor-third">
+               <img src="./img/decor-first.png" alt="">
+            </div>
+            <div class="decor-fourth">
+               <img src="./img/decor-second.png" alt="">
+            </div>
             <div class="speakers__wrapper">
                <h2 class="title-mobile">СПИКЕРЫ</h2>
                <div class="speaker__info">
@@ -2058,11 +2125,11 @@
             </div>
          </section>
          <section class="partners">
+            <div class="partners__title">
+               <h3>Партнеры</h3>
+               <a href="#">все Партнеры</a>
+            </div>
             <div class="partners__wrapper">
-               <div class="partners__title">
-                  <h3>Партнеры</h3>
-                  <a href="#">все Партнеры</a>
-               </div>
                <div class="partners__container">
                   <a href="#" class="partners__box general-partner">
                      <div class="partners__name"><h4>Генеральный партнер</h4></div>

@@ -1,22 +1,36 @@
 .themes
  min-height: 100vh
- background-image: url(../img/bg-third.png)
+ background-image: url(../img/themes-bg.png)
  background-repeat: no-repeat
  background-size: cover
+ position: relative
+ .word-bg
+  background-color: rgba(29, 162, 159, 0.08)
+  border: 1px solid #1DA29F
+  padding: 0 30px
+  color: #1A88C9
+ .scene
+  position: absolute
+  overflow: hidden
+  .layer
+    position: absolute
+ .decor-second
+  position: absolute
+  bottom: -20px
+  z-index: 10
+ &__wrapper-mobile
+  display: none
+ .first-line, .second-line, .third-line, .fourth-line, .fifth-line, .sixth-line, .seventh-line, .eighth-line, .ninth-line, .tenth-line
+  display: flex
+  font-family: 'Bebas Neue'
+  align-items: center
+  height: 120px 
  &__wrapper
   max-width: 1510px
   margin: auto
   padding-top: 100px
-  .word-bg
-   background-color: rgba(29, 162, 159, 0.08)
-   border: 1px solid #1DA29F
-   padding: 0 30px
-   color: #1A88C9
-  .first-line, .second-line, .third-line, .fourth-line, .fifth-line, .sixth-line
-   display: flex
-   font-family: 'Bebas Neue'
-   align-items: center
-   height: 120px
+  z-index: 10
+  position: relative
   .first-line
    padding-left: 385px
    h3
@@ -89,5 +103,233 @@
     font-size: 80px 
     padding: 0 30px
 
+@media screen and ( max-width: 1920px )  
+  .themes
+    .decor-second
+      left: -16%
 
+@media screen and ( max-width: 1510px )  
+  .themes
+    .decor-second
+      display: none 
+    &__wrapper
+      .first-line
+        padding-left: 30%
+        h3
+          font-size: 65px 
+        p
+          font-size: 38px 
+          font-weight: 700
+          padding: 0 30px
+      .second-line 
+        padding-left: 5%
+        p
+          font-size: 38px
+          font-weight: 300 
+        h2, h4
+          font-size: 65px
+          font-weight: 700 
+          padding: 0 30px
+        h4
+          font-size: 38px
+        h3
+          font-size: 38px  
+      .third-line
+        padding-left: 25%
+        h3
+          font-size: 38px
+          padding: 0 30px
+        p
+          padding: 0 30px
+          font-size: 32px
+          font-weight: 400   
+        h2
+          font-size: 66px 
+      .fourth-line 
+        padding-left: 5%
+        h2
+          font-size: 50px
+          font-weight: 700 
+          padding-right: 30px
+        h4
+          font-size: 38px
+          font-weight: 400
+        h3,p
+          font-size: 50px
+          font-weight: 700  
+          padding: 0 30px
+        p
+          font-weight: 200
+      .fifth-line
+        padding-left: 26%
+        p
+          font-size: 38px
+          font-weight: 300 
+          padding-right: 30px
+        h3
+          font-size: 50px
+          padding: 0 30px
+        h4
+          font-size: 50px
+          font-weight: 400 
+      .sixth-line  
+        padding-left: 22%
+        p
+          font-size: 38px
+          font-weight: 300
+          padding-right: 30px
+        h4
+          font-size: 38px
+        h2
+          font-size: 66px 
+          padding: 0 30px
+
+@media screen and ( max-width: 1200px )     
+  .themes 
+    &__wrapper
+      .second-line, .third-line  
+        p
+          display: none
+      .second-line
+        h4
+          display: none        
+      .fourth-line
+        h3
+          display: none
+      .fifth-line
+        padding-left: 4%   
+      .sixth-line
+        padding-left: 10%     
+
+@media screen and ( max-width: 900px )  
+  .themes 
+    &__wrapper
+      .first-line
+        h3
+          font-size: 50px 
+        p
+          font-size: 30px
+      .second-line 
+        p
+          font-size: 30px
+        h2, h4
+          font-size: 50px
+        h4
+          font-size: 30px
+        h3
+          font-size: 30px  
+      .third-line
+        h3
+          font-size: 30px
+        p
+          font-size: 32px   
+        h2
+          font-size: 50px 
+      .fourth-line 
+        h2
+          font-size: 50px
+        h4
+          font-size: 30px
+        h3,p
+          font-size: 50px
+      .fifth-line
+        p
+          font-size: 30px
+        h3
+          font-size: 20px
+        h4
+          font-size: 50px
+      .sixth-line  
+        p
+          font-size: 30px
+        h4
+          font-size: 30px
+        h2
+          font-size: 50px 
+
+@media screen and ( max-width: 768px )  
+  .themes 
+    &__wrapper
+      display: none
+    &__wrapper-mobile
+      padding-top: 50px
+      padding-bottom: 50px
+      display: block 
+      .first-line, .second-line, .third-line, .fourth-line, .fifth-line, .sixth-line, .seventh-line, .eighth-line, .ninth-line, .tenth-line
+        height: 70px 
+      .word-bg
+        padding: 10px 10px  
+      .first-line 
+        padding-left: 20%
+        h2
+          font-size: 30px
+          font-weight: 300
+        p  
+          padding-left: 10px
+          font-weight: 700
+          font-size: 17px 
+      .second-line
+        padding-left: 20%
+        h4
+          font-size: 22px
+          font-weight: 700
+        h3
+          padding-left: 10px
+          font-size: 30px
+      .third-line
+        padding-left: 7%
+        h4
+          font-size: 25px
+        h3
+          padding-left: 10px
+          font-size: 20px
+      .fourth-line
+        padding-left: 22%
+        h2
+          padding-right: 10px
+          font-size: 36px
+        h3
+          font-size: 30px
+          font-weight: 300
+      .fifth-line
+        padding-left: 8%
+        h2
+          font-size: 34px
+        h4
+          padding-left: 10px
+          font-size: 23px 
+          font-weight: 300 
+      .sixth-line
+        padding-left: 30%
+        h3
+          font-size: 24px
+      .seventh-line
+        padding-left: 20%
+        h3
+          padding-right: 10px
+          font-size: 25px
+          font-weight: 300
+        h4
+          font-size: 24px  
+      .eighth-line
+        padding-left: 10%
+        h2
+          font-size: 28px
+        h3
+          padding-left: 10px
+          font-size: 20px
+      .ninth-line
+        padding-left: 30%
+        h2
+          font-size: 30px
+        h5
+          padding-left: 10px
+          font-size: 18px  
+          font-weight: 300
+      .tenth-line
+        padding-left: 9%
+        h3
+          font-size: 24px
+          font-weight: 300            
+       
     
