@@ -7,17 +7,22 @@
   max-width: 1300px
   margin: auto
   position: relative
+ &__title
+  display: none  
  &__block
   max-width: 890px
   display: flex
   .first-column, .second-column
    display: flex
    flex-direction: column 
+  .arrow-box-adaptive
+   display: none 
   .arrow-box 
    width: 445px
    height: 225px
    position: relative
-   p
+   a
+    display: inline-block
     font-size: 20px
     color: #1DA29F
     text-transform: uppercase
@@ -109,3 +114,59 @@
     font-size: 130px
     -webkit-text-stroke: 1px #1DA29F
     color: rgb(0,0 ,0, 0 )
+
+@media screen and ( max-width: 1800px ) 
+  .news
+    .rotate-title
+      bottom: -180px
+      right: -100px
+      h2
+        font-size: 100px
+      h3
+        font-size: 97px  
+@media screen and ( max-width: 1280px ) 
+  .news
+    display: flex
+    &__block
+      margin: auto
+    .rotate-title
+      display: none  
+@media screen and ( max-width: 900px ) 
+  .news
+    flex-direction: column
+    &__title
+      width: fit-content
+      display: block
+      margin-top: 60px
+      background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.34) 0.01%, rgba(83, 83, 156, 0.68) 22.92%, rgba(32, 139, 201, 0.68) 50.52%, rgba(29, 162, 158, 0.68) 99.99%)
+      h2
+        padding-left: 15px
+        padding-right: 20px
+    &__wrapper
+      margin-top: 40px    
+    &__block
+      flex-direction: column
+      .first-column, .second-column
+        .arrow-box 
+          display: none
+        .arrow-box-adaptive
+          display: block
+          height: 150px
+          position: relative
+          a
+            display: inline-block
+            font-size: 20px
+            color: #1DA29F
+            text-transform: uppercase
+            margin-top: 50px
+          .prev-news-adaptive, .next-news-adaptive
+            position: absolute 
+            top: 43px  
+            right: 70px
+          .next-news-adaptive
+            right: 0
+            transform: rotate(180deg)  
+    &__box
+      width: 305px
+
+

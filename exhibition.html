@@ -19,7 +19,7 @@
          <div class="nav">
             <ul class="nav__ul nav__ul_upper ">
                <li class="nav__li nav__li_upper nav__li_upper-1">
-                  <a href="#"><img src="./img/nav-logo.svg" alt=""></a>
+                  <a href="#" class="nav__logo"><img src="./img/nav-logo.svg" alt=""></a>
                   <a href="#" class="nav__a nav__a_upper">
                      о проекте
                   </a>
@@ -186,6 +186,9 @@
             </div>
          </section>
          <section class="news">
+            <div class="news__title">
+               <h2>НОВОСТИ</h2>
+            </div>
             <div class="news__wrapper">
                <div class="news__block">
                   <div class="first-column">
@@ -222,7 +225,7 @@
                         </div>
                      </div>
                      <div class="arrow-box">
-                        <p>Все новости</p>
+                        <a href="#">Все новости</a>
                         <img src="./img/news-arrow-left.svg" alt="" class="prev-news">
                      </div>
                   </div>
@@ -261,6 +264,11 @@
                               2014 году Общественны...</div>
                            <a href="" class="read-more">Читать далее</a>
                         </div>
+                     </div>
+                     <div class="arrow-box-adaptive">
+                        <a href="#">Все новости</a>
+                        <img src="./img/news-arrow-left.svg" alt="" class="prev-news-adaptive">
+                        <img src="./img/news-arrow-left.svg" alt="" class="next-news-adaptive">
                      </div>
                   </div>
                </div>
@@ -1806,10 +1814,20 @@
                   </clipPath>
                </defs>
                </svg>
+              <img src = './img/results-mobile.png' class='results__slider'>
             </div>   
+            <div class="navigation-buttons">
+               <div class="prev-slide">
+                  <img src ='./img/news-arrow-left.svg'>
+               </div>
+               <div class="next-slide">
+                  <img src ='./img/news-arrow-right.svg'>
+               </div>
+            </div>
          </section>
          <section class="national">
             <div class="national__wrapper">
+               
                <div class="national__title">
                   <h3 class="title">Национальная премия</h3>
                </div>
@@ -1824,6 +1842,7 @@
          </section>
          <section class="speakers">
             <div class="speakers__wrapper">
+               <h2 class="title-mobile">СПИКЕРЫ</h2>
                <div class="speaker__info">
                   <div class="speakers__photo">
                      <figure class="speaker">
@@ -2035,6 +2054,7 @@
                   </div>
                   <!--slider end-->
                </div>
+               <a href="#" class="all-speakers-mobile">ВСЕ СПИКЕРЫ</a>
             </div>
          </section>
          <section class="partners">
@@ -2044,7 +2064,7 @@
                   <a href="#">все Партнеры</a>
                </div>
                <div class="partners__container">
-                  <a href="#" class="partners__box">
+                  <a href="#" class="partners__box general-partner">
                      <div class="partners__name"><h4>Генеральный партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/gazprom.svg" alt="">
@@ -2081,8 +2101,9 @@
                      </div>
                   </a>
                </div>
+               <a href="#" class="all-partners-mobile">ВСЕ ПАРТНЕРЫ</a>
             </div>
-         </section>
+         </section> 
       </main>
       <footer class="footer">
          <div class="buttons-container">
@@ -2115,6 +2136,7 @@
       </footer>
    </div>
    <script src="./exhibition.js"></script>
+   <script src="./results.js"></script>
    <script src="./news.js"></script>
    <script src="./speaker.js"></script>
 </body>

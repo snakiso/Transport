@@ -3,6 +3,8 @@ let newsContent = document.querySelectorAll('.news__content')
 let date = document.querySelectorAll('.date')
 let nextNews = document.querySelector('.next-news')
 let prevNews = document.querySelector('.prev-news')
+let nextNewsAdaptive = document.querySelector('.next-news-adaptive')
+let prevNewsAdaptive = document.querySelector('.prev-news-adaptive')
 let page = 0
 
 function opacityNull(){
@@ -47,3 +49,21 @@ prevNews.addEventListener('click', async function () {
  setTimeout(changeContent, 600)
  setTimeout(opacityOne, 1000)
 })
+
+
+nextNewsAdaptive.addEventListener('click', async function(){
+    opacityNull()
+    ++page
+    setTimeout(changeContent, 600)
+    setTimeout(opacityOne, 1000)
+   })
+
+prevNewsAdaptive.addEventListener('click', async function () {
+    opacityNull()
+    if(page == 0){
+     page = 10
+    }
+    page = page-1
+    setTimeout(changeContent, 600)
+    setTimeout(opacityOne, 1000)
+   })   

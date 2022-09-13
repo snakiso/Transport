@@ -3,6 +3,12 @@
  background-image: url(../img/bg-first.png)
  background-repeat: no-repeat
  background-size: cover
+ position: relative
+ .decor-first
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 2
  &__title.faded
   opacity: 0
   transform: translateX(-100px)
@@ -14,6 +20,7 @@
   position: relative
   opacity: 1
   transition: all 1s
+  z-index: 5
   .title
    font-size: 80px
    font-weight: 700
@@ -48,6 +55,7 @@
   font-weight: 700
   width: fit-content
   padding-left: 24.6%
+  z-index: 5
   p
    margin: 0
    font-size: 32px
@@ -68,6 +76,7 @@
   padding-left: 24.6%
   text-transform: uppercase
   margin-top: 130px
+  z-index: 5
   h4
     font-size: 62px
     color: #00ABEC
@@ -79,6 +88,7 @@
       font-size: 24px
       color: #1DA29F
       margin: 0
+      font-family: "Bebas Neue"
       font-weight: 700
   .register-btn
     margin-top: 50px
@@ -92,6 +102,50 @@
         padding-left: 15.3%
     &__motto, .show-date
       padding-left: 15.3%
+@media screen and ( max-width: 1100px ) 
+  .preview
+    &__title
+      flex-direction: column
+      align-items: start
+      .title
+        font-size: 32px
+      span
+        font-size: 62px
+        padding-left: 15.3%
+        margin: 0   
+    &__motto
+      margin-top: 20px
+      flex-direction: column
+      align-items: start
+      p
+        font-size: 20px
+        margin: 3px 0
+      span
+        display: none  
+    .show-date
+      margin-top: 30px
+      h4
+        font-size: 40px
+      .show-place
+        p
+          font-size: 20px   
+          max-width: 130px  
+      .register-btn
+        width: 290px
+@media screen and ( max-width: 768px )  
+  .preview
+    &__title
+      .title
+        padding-left: 15px
+      span
+        padding-left: 15px
+    &__motto
+      padding-left: 15px
+    .show-date
+      padding-left: 15px        
+
+
+
     
 
           

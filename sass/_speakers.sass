@@ -10,6 +10,8 @@
   display: flex
   flex: 1
   column-gap: 100px
+ .title-mobile, .all-speakers-mobile
+  display: none
  .speakers-slider
   width: 800px
   overflow: hidden
@@ -129,3 +131,62 @@
    height: 80px
    font-family: 'Heliosc', sans-serif
    font-size: 18px
+
+
+@media screen and ( max-width: 1440px )  
+  .speakers 
+    .speakers-slider
+      width: 500px
+    &__list
+      h1
+        font-size: 100px
+        right: 0
+    &__position
+      max-width: 400px      
+@media screen and ( max-width: 1000px )  
+   .speakers 
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    .title-mobile
+      display: block
+      width: 100%
+      font-size: 40px
+      ont-family: 'Bebas Neue'
+      font-weight: 700
+      color: #1A88C9
+      padding-left: 15px
+      margin-top: 60px
+    .all-speakers-mobile  
+      display: block
+      width: 100%
+      color: #1DA29F
+      padding-left: 15px
+      margin-bottom: 60px
+      margin-top: 60px
+    .speakers-slider
+      width: 320px
+      .swiper-button-next
+        top: 50px
+      .swiper-button-prev
+        top: 15px 
+      .swiper-button-next, .swiper-button-prev
+        span:before,span:after
+          left: 10px    
+    &__list
+      h2,a,h1
+        display: none
+    &__photo
+      height: 300px
+      width: 300px 
+      .speaker
+        height: 200px
+        width: 200px 
+    &__position
+      font-size: 12px
+      max-width: 280px        
+@media screen and ( max-width: 500px )     
+  .speakers 
+    &__wrapper
+      flex-direction: column
+      align-items: start   

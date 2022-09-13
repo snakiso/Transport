@@ -8,6 +8,8 @@
   max-width: 1300px
   margin: auto
   flex: 1
+ .all-partners-mobile 
+  display: none
  &__title
   text-transform: uppercase
   position: relative
@@ -52,3 +54,24 @@
   display: flex
   align-items: center
   justify-content: center  
+
+@media screen and ( max-width: 900px )    
+  .partners
+    .all-partners-mobile
+      display: block
+      color: #1DA29F
+      margin-top: 40px
+      padding-left: 15px
+    &__title
+      h3
+        font-size: 40px
+        padding-left: 15px
+      a
+        display: none  
+    &__container
+      justify-content: center
+    &__box
+      display: none
+    .general-partner  
+      display: block
+      padding: 0 15px

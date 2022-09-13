@@ -8,9 +8,11 @@
     z-index: 20
     right: -100%
     transition-delay: 1s
+    top:0
     transition: all .5s
     display: flex
     align-items: center
+    justify-content: center
     &__close-btn
         position: absolute
         top: 50px
@@ -110,7 +112,36 @@
         bottom: 0
         left: 0
         background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.34) 0.01%, rgba(83, 83, 156, 0.68) 22.92%, rgba(32, 139, 201, 0.68) 50.52%, rgba(29, 162, 158, 0.68) 99.99%)
-
 .popNav.active
     right: 0%
     transition-delay: .1s
+
+@media screen and ( max-width: 1900px ) 
+    .popNav
+        .nav__li
+            width: 270px
+        .nav__li_upper-1
+            .nav__img
+                width: 100%
+                img
+                    width: 100%    
+@media screen and ( max-width: 1280px )
+    .popNav
+        height: 100%
+        overflow-y: auto
+        &__close-btn
+            top: 30px
+            right: 15px
+        .nav__ul_upper
+            padding-top: 180px
+            height: 100%
+            grid-template-areas: "nav_1" "nav_2" "nav_3" "nav_4"  "nav_5" "nav_6" "nav_7"  
+        .nav__li
+            width: 320px                       
+        .nav__li_upper-1
+            max-height: 380px
+            .nav__logo
+                display: none
+            .nav__img
+                display: none
+                
