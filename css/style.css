@@ -460,6 +460,46 @@ a {
 }
 .preview .show-date .register-btn {
   margin-top: 50px;
+  padding-right: 30px;
+}
+.preview .show-date .register-btn:hover .button-arrow:before {
+  right: -35px;
+}
+.preview .show-date .register-btn:hover .button-arrow:after {
+  right: -37px;
+  transform: scaleX(1);
+}
+
+.button-arrow {
+  position: relative;
+  width: 8px;
+  height: 8px;
+}
+
+.button-arrow:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  transform: rotate(45deg) translateY(-50%);
+  top: 50%;
+  right: -17px;
+  transition: all 0.3s;
+}
+
+.button-arrow:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 1px;
+  background: white;
+  top: 50%;
+  transform-origin: right;
+  transform: translateY(50%) scaleX(0);
+  right: -19px;
+  transition: all 0.3s;
 }
 
 .show-date.faded {
@@ -585,11 +625,21 @@ a {
   right: 45px;
   cursor: pointer;
 }
+.news__box.bg-dark {
+  transition-delay: 0.2s;
+}
+.news__box.bg-purple {
+  transition-delay: 0.4s;
+}
+.news__box:nth-child(3) {
+  transition-delay: 0.6s;
+}
 .news__box {
   width: 445px;
   background: #fff;
   height: 225px;
   display: flex;
+  transition: all 0.3s;
 }
 .news__box .inner-box {
   max-width: calc(100% - 60px);
@@ -1210,7 +1260,7 @@ a {
   cursor: pointer;
 }
 .accordion__item.active {
-  height: 740px;
+  height: 800px;
   border-bottom: 1px solid #00ABEC;
 }
 .accordion__item.active .accordion__item-horizont {
@@ -1394,6 +1444,15 @@ a {
 .national__button {
   margin-left: 25.6%;
   margin-top: 60px;
+}
+.national__button:hover .button-arrow:before {
+  transform: rotate(0deg);
+  top: 30%;
+}
+.national__button:hover .button-arrow:after {
+  transform: scaleX(1) rotate(-45deg);
+  top: 30%;
+  right: -16px;
 }
 
 @media screen and (max-width: 900px) {

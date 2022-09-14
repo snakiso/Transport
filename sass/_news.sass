@@ -37,11 +37,18 @@
     top: 45px
     right: 45px 
     cursor: pointer
+ &__box.bg-dark
+  transition-delay: .2s 
+ &__box.bg-purple  
+  transition-delay: .4s 
+ &__box:nth-child(3) 
+  transition-delay: .6s  
  &__box
   width: 445px
   background: #fff 
   height: 225px
   display: flex
+  transition: all .3s
   .inner-box
    max-width: calc(100% - 60px)
    margin: auto
