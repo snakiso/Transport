@@ -466,8 +466,8 @@ a {
   right: -35px;
 }
 .preview .show-date .register-btn:hover .button-arrow:after {
-  right: -37px;
-  transform: scaleX(1);
+  right: -38px;
+  transform: scaleX(1) translateY(50%);
 }
 
 .button-arrow {
@@ -1445,14 +1445,18 @@ a {
   margin-left: 25.6%;
   margin-top: 60px;
 }
+.national__button .button-arrow:after {
+  transform: scaleX(0) rotate(-45deg);
+  transform-origin: right;
+}
 .national__button:hover .button-arrow:before {
   transform: rotate(0deg);
   top: 30%;
 }
 .national__button:hover .button-arrow:after {
   transform: scaleX(1) rotate(-45deg);
-  top: 30%;
   right: -16px;
+  top: 30%;
 }
 
 @media screen and (max-width: 900px) {
@@ -1944,6 +1948,12 @@ a {
        column-gap: 10px;
   justify-content: center;
   padding-top: 60px;
+}
+.footer .first-line a, .footer .second-line a {
+  opacity: 0.6;
+}
+.footer .first-line a:hover, .footer .second-line a:hover {
+  opacity: 1;
 }
 .footer .second-line {
   padding-top: 10px;
