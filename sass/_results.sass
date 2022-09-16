@@ -1,5 +1,4 @@
 .results
- min-height: 100vh
  background-image: url(../img/bg-fourth.png)
  background-repeat: no-repeat
  background-size: cover
@@ -14,6 +13,7 @@
   width: 100%
   display: flex
   justify-content: center
+  padding: 130px 0
   img
     display: none
   .svg-hover
@@ -37,6 +37,10 @@
    margin: 0
    line-height: 150%
 
+@media screen and ( max-width: 1920px ) 
+  .results
+      &__title
+        padding-left: 16%  
 @media screen and ( max-width: 1439px ) 
   .results
       &__title
@@ -50,14 +54,18 @@
       column-gap: 30px
     &__title
       padding-left: 15px
+      top: 60px
       h2
         font-size: 32px 
+        padding-right: 10px
+    &__wrapper::-webkit-scrollbar 
+      width: 0     
     &__wrapper
+      padding: 150px 0 60px 0
       width: 320px
-      overflow-x: hidden
+      overflow-x: scroll
       height: 360px
-      bottom: 80px
-      position: absolute
+      position: relative
       svg
         display: none
       img

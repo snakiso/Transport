@@ -10,18 +10,16 @@ let page = 0
 
 function opacityNull() {
     for (let i = 0; i < newsBox.length; i++) {
+        newsBox[i].style.transitionDelay= '0s'
         newsBox[i].style.opacity = '0'
-        // newsName[i].style.opacity = '0'
-        // newsContent[i].style.opacity = '0'
-        // date[i].style.opacity = '0'
     }
 }
 function opacityOne() {
     for (let i = 0; i < newsName.length; i++) {
+        newsBox[1].style.transitionDelay = '.1s'
+        newsBox[2].style.transitionDelay = '.2s'
+        newsBox[3].style.transitionDelay = '.3s'
         newsBox[i].style.opacity = '1'
-        // newsName[i].style.opacity = '1'
-        // newsContent[i].style.opacity = '1'
-        // date[i].style.opacity = '1'
     }
 }
 
@@ -39,8 +37,8 @@ async function changeContent() {
 nextNews.addEventListener('click', async function () {
     opacityNull()
     ++page
-    setTimeout(changeContent, 600)
-    setTimeout(opacityOne, 1000)
+    setTimeout(changeContent, 300)
+    setTimeout(opacityOne, 600)
 })
 
 prevNews.addEventListener('click', async function () {

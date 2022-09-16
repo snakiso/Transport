@@ -59,6 +59,19 @@
   p
    margin: 0
    font-size: 32px
+   transition: all 1s
+  .motto.faded
+    opacity: 0  
+    transform: translateX(-100px) 
+  .motto
+    opacity: 1
+    transform: translateX(0px)  
+  .motto:nth-child(1)
+    transition-delay: .8s
+  .motto:nth-child(3)
+    transition-delay: .6s
+  .motto:nth-child(5)
+    transition-delay: .4s     
   span
    content: '' 
    width: 10px

@@ -18,38 +18,38 @@ for (let i = 0; i < accordionItem.length; i++) {
 function ChangeActiveSlide() {
     if (accordionItem[0].classList.contains('active') && accordionItem[0].classList.contains('hidden') == 0) {
         const img = new Image();
-        img.src = './img/russian.png'
+        img.src = './img/strategy.png'
         img.onload = () => {
             accordion.style.backgroundImage = `url(${img.src})`
         }
     }
     if (accordionItem[1].classList.contains('active') && accordionItem[1].classList.contains('hidden') == 0) {
         const img = new Image();
-        img.src = './img/international.png'
+        img.src = './img/infrastructura.png'
         img.onload = () => {
             accordion.style.backgroundImage = `url(${img.src})`
         }
     }
     if (accordionItem[2].classList.contains('active') && accordionItem[2].classList.contains('hidden') == 0) {
         const img = new Image();
-        img.src = './img/infrastructura.png'
+        img.src = './img/international.png'
         img.onload = () => {
             accordion.style.backgroundImage = `url(${img.src})`
         }
     }
-    if (accordionItem[3].classList.contains('active') && accordionItem[3].classList.contains('hidden') == 0) {
-        const img = new Image();
-        img.src = './img/strategy.png'
-        img.onload = () => {
-            accordion.style.backgroundImage = `url(${img.src})`
-        }
-    }
+    // if (accordionItem[3].classList.contains('active') && accordionItem[3].classList.contains('hidden') == 0) {
+    //     const img = new Image();
+    //     img.src = './img/strategy.png'
+    //     img.onload = () => {
+    //         accordion.style.backgroundImage = `url(${img.src})`
+    //     }
+    // }
 }
 // Код для видео 
 let video = document.querySelector('.back-video')
 let header = document.querySelector('.header')
 let title = document.querySelector('.preview__title')
-let motto = document.querySelector('.preview__motto')
+let motto = document.querySelectorAll('.motto')
 let dateShow = document.querySelector('.show-date')
 
 
@@ -59,14 +59,19 @@ window.addEventListener('click', () => {
     video.style.opacity = '0.2'
     header.classList.remove('faded')
     title.classList.remove('faded')
-    motto.classList.remove('faded')
+    for(let i = 0; i< motto.length; i++){
+        motto[i].classList.remove('faded')
+    }
+    dateShow.classList.remove('faded')
 })
 window.addEventListener('scroll', () => {
     video.classList.add('faded')
     video.style.opacity = '0.2'
     header.classList.remove('faded')
     title.classList.remove('faded')
-    motto.classList.remove('faded')
+    for (let i = 0; i < motto.length; i++) {
+        motto[i].classList.remove('faded')
+    }
     dateShow.classList.remove('faded')
 })
 
@@ -87,3 +92,11 @@ closeBtn.addEventListener('click', () => {
 
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
+
+
+///1. ScrollAnimations 
+var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container], [data-animation-start]');
+$('[data-animation-start]').scrollAnimations({
+    offset: 0.8
+});
+$containers.scrollAnimations();

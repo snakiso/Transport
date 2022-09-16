@@ -4,7 +4,6 @@
  background-repeat: no-repeat
  background-size: cover
  background-position: center
- min-height: 100vh
  background-blend-mode: multiply
  transition: background-image .5s ease-in-out 0s
  &__item
@@ -17,7 +16,7 @@
   overflow: hidden
   cursor: pointer
  &__item.active
-  height: 800px 
+  height: 750px 
   border-bottom: 1px solid #00ABEC
   .accordion__item-horizont
    color: #00ABEC
@@ -35,18 +34,35 @@
   padding-left: 24.6%
  &__content 
   font-family: 'Bebas Neue'
+  display: flex
+  flex-direction: column
+  padding-top: 80px
   p
    padding-left: 24.6%
    font-size: 46px
    max-width: 1080px
+   margin-top: 25px
  &__item-title
   h3
+   margin-bottom: 0
    padding-left: 24.6%
    font-size: 80px
    width: fit-content
    line-height: 140%
    padding-right: 40px
    background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.34) 0.01%, rgba(83, 83, 156, 0.68) 22.92%, rgba(32, 139, 201, 0.68) 50.52%, rgba(29, 162, 158, 0.68) 99.99%)
+
+@media screen and ( max-width: 1920px ) 
+  .accordion
+    &__item-horizont
+      padding-left: 16% 
+    &__item-title
+      h3
+        padding-left: 16%
+    &__content 
+      p
+        padding-left: 16%  
+       
 
 @media screen and ( max-width: 900px ) 
   .accordion
@@ -56,11 +72,12 @@
       max-width: 230px   
     &__item-title
       h3
-        font-size: 32px  
+        font-size: 31px  
         padding-left: 15px
+        line-height: 38.4px
     &__content 
       margin-top: 100px
       p
         font-size: 20px 
         padding-left: 15px  
-        max-width: 290px   
+        max-width: 280px   

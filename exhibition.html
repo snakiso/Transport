@@ -19,7 +19,7 @@
          </div>
          <div class="nav">
             <ul class="nav__ul nav__ul_upper ">
-               <li class="nav__li nav__li_upper nav__li_upper-1">
+               <li class="nav__li nav__li_upper nav__li_upper-1 no-hover">
                   <a href="#" class="nav__logo"><img src="./img/nav-logo.svg" alt=""></a>
                   <a href="#" class="nav__a nav__a_upper">
                      о проекте
@@ -38,7 +38,7 @@
                      <img src="./img/nav-about.png" alt="">
                   </div>
                </li>
-               <li class="nav__li nav__li_upper nav__li_upper-2">
+               <li class="nav__li nav__li_upper nav__li_upper-2 no-hover">
                   <a href="#" class="nav__a nav__a_upper">
                      Форум
                   </a>
@@ -54,7 +54,7 @@
                      <img src="./img/nav-forum.svg" alt="">
                   </div>
                </li>
-               <li class="nav__li nav__li_upper nav__li_upper-3">
+               <li class="nav__li nav__li_upper nav__li_upper-3 no-hover ">
                   <a href="#" class="nav__a nav__a_upper">
                      Выставка
                   </a>
@@ -69,7 +69,7 @@
                      <img src="./img/nav-art.svg" alt="">
                   </div>
                </li>
-               <li class="nav__li nav__li_upper nav__li_upper-4">
+               <li class="nav__li nav__li_upper nav__li_upper-4 no-hover">
                   <a href="#" class="nav__a nav__a_upper">
                      Премия
                   </a>
@@ -85,7 +85,7 @@
                      <img src="./img/nav-prize.svg" alt="">
                   </div>
                </li>
-               <li class="nav__li nav__li_upper nav__li_upper-5">
+               <li class="nav__li nav__li_upper nav__li_upper-5 no-hover">
                   <a href="#" class="nav__a nav__a_upper">
                      Партнеры
                   </a>
@@ -97,7 +97,7 @@
                      <img src="./img/nav-partners.svg" alt="">
                   </div>
                </li>
-               <li class="nav__li nav__li_upper nav__li_upper-6">
+               <li class="nav__li nav__li_upper nav__li_upper-6 no-hover">
                   <a href="#" class="nav__a nav__a_upper">
                      Пресс-центр
                   </a>
@@ -111,7 +111,7 @@
                      <img src="./img/nav-press.svg" alt="">
                   </div>
                </li>
-               <li class="nav__li nav__li_upper nav__li_upper-7">
+               <li class="nav__li nav__li_upper nav__li_upper-7 no-hover">
                   <a href="#" class="nav__a nav__a_upper">
                      Итоги
                   </a>
@@ -174,19 +174,19 @@
                </h2>
                <span>2022</span>
             </div>
-            <div class="preview__motto faded">
-               <p>Всё нужное рядом</p>
+            <div class="preview__motto">
+               <p class="motto faded">Всё нужное рядом</p>
                <span></span>
-               <p>Любые сложности преодолимы</p>
+               <p class="motto faded">Любые сложности преодолимы</p>
                <span></span>
-               <p>Главное - работать сообща</p>
+               <p class="motto faded">Главное - работать сообща</p>
             </div>
             <div class="show-date faded">
                <h4>14 - 19 ноября</h4>
                <div class="show-place">
                   <p>Москва, комплекс «Гостиный Двор»</p>
                </div>
-               <button class="button register-btn">Регистрация <span class="button-arrow"></span></button>
+               <button class="button register-btn no-hover">Регистрация <span class="button-arrow"></span></button>
             </div>
          </section>
          <section class="news">
@@ -301,83 +301,84 @@
                <img src="./img/decor-second.png" alt="">
             </div>
             <div class="themes__wrapper">
-               <div class="first-line">
+               <div data-animation-container class="first-line fade-right">
                   <a href="#"><h3 class="word-bg">Эксперты</h3></a> 
                   <p>Бизнес</p>
                </div>
-               <div class="second-line">
+               <div data-animation-container class="second-line fade-left">
                   <p>перевозки</p>
                   <h2>транспорт</h2>
                   <h4>Инновации</h4>
                   <a href="#"><h3 class="word-bg">Знание</h3></a> 
                   <h2>Технологии</h2>
                </div>
-               <div class="third-line">
+               <div data-animation-container class="third-line fade-right">
                   <a href="#"><h3 class="word-bg">Спикеры</h3></a>
                   <h3>Безопасность</h3>
                   <p>Скорость</p>
                   <a href="#"><h2 class="word-bg">Форум</h2></a>
                </div>
-               <div class="fourth-line">
+               <div data-animation-container class="fourth-line fade-left">
                   <h2>DIGITAL</h2>
                   <a href="#"><h4 class="word-bg">Выставка</h4></a>
                   <h3>Цифровизация</h3>
                   <p>Онлайн/офлайн</p>
                </div>
-               <div class="fifth-line">
+               <div data-animation-container class="fifth-line fade-right">
                   <p>Будущее</p>
                   <h3>Стратегия</h3>
                   <a href="#"><h4 class="word-bg">Представители власти</h4></a>
                </div>
-               <div class="sixth-line">
+               <div data-animation-container class="sixth-line fade-left">
                   <p>Дискуссии</p>
                   <a href="#"><h4 class="word-bg">Премия</h4></a> 
                   <h2>Инфраструктура</h2>
                </div>
             </div>
-            <div class="themes__wrapper-mobile">
-               <div class="first-line">
-                  <a href="#"><h2 class='word-bg'>эксперты</h2></a>
+            <div  class="themes__wrapper-mobile">
+               <div data-animation-container class="first-line fade-right">
+                  <a href="#"><h2 class='word-bg no-hover'>эксперты</h2></a>
                   <p>бизнес</p>
                </div>
-               <div class="second-line">
+               <div data-animation-container class="second-line fade-left">
                   <h4>транспорт</h4>
                   <h3>инновации</h3>
                </div>
-               <div class="third-line">
-                  <a href="#"><h2 class='word-bg'>знание</h2></a>
+               <div data-animation-container class="third-line fade-right">
+                  <a href="#"><h2 class='word-bg no-hover'>знание</h2></a>
                   <h3>цифровизация</h3>
                </div>
-               <div class="fourth-line">
+               <div data-animation-container class="fourth-line fade-left">
                   <h2>digital</h2>
-                 <a href="#"><h3 class='word-bg'>выставка</h3></a> 
+                 <a href="#"><h3 class='word-bg no-hover'>выставка</h3></a> 
                </div>
-               <div class="fifth-line">
-                  <a href="#"><h2 class='word-bg'>форум</h2></a>
+               <div data-animation-container class="fifth-line fade-right">
+                  <a href="#"><h2 class='word-bg no-hover'>форум</h2></a>
                   <h4>дискуссии</h4>
                </div>
-               <div class="sixth-line">
+               <div data-animation-container class="sixth-line fade-left">
                   <h3>Технологии</h3>
                </div>
-               <div class="seventh-line">
+               <div data-animation-container class="seventh-line fade-right">
                   <h3>Онлайн/офлайн</h3>
-                 <a href="#"><h4 class='word-bg'>премия</h4></a> 
+                 <a href="#"><h4 class='word-bg no-hover'>премия</h4></a> 
                </div>
-               <div class="eighth-line">
-                  <a href="#"><h2 class='word-bg'>Спикеры</h2></a>
+               <div data-animation-container class="eighth-line fade-left">
+                  <a href="#"><h2 class='word-bg no-hover'>Спикеры</h2></a>
                   <h3>Безопасность</h3>
                </div>
-               <div class="ninth-line">
+               <div data-animation-container class="ninth-line fade-right">
                   <h2>стратегия</h2>
                   <h5>скорость</h5>
                </div>
-               <div class="tenth-line">
-                 <a href="#"><h3 class='word-bg'>представители власти</h3></a> 
+               <div data-animation-container class="tenth-line fade-left">
+                 <a href="#"><h3 class='word-bg no-hover'>представители власти</h3></a> 
                </div>
             </div>
          </section>
          <section class="accordion">
             <div class="accordion__slider">
+               <!--
                <div class="accordion__item hidden">
                   <span class="accordion__item-horizont">Российское общество «Знание». Транспорт</span>
                   <div class="accordion__content">
@@ -387,15 +388,15 @@
                      <p>Лекции и интервью о технологиях и достижениях в области транспорта</p>
                   </div>
                </div>
-               <div class="accordion__item hidden">
-                  
-                  <span class="accordion__item-horizont">Международные транспортные коридоры</span>
+               -->
+               <div class="accordion__item active">
+                  <span class="accordion__item-horizont">Стратегия</span>
                   <div class="accordion__content">
                      <div class="accordion__item-title">
-                        <h3>Международные транспортные коридоры</h3>
+                        <h3>Стратегия</h3>
                      </div>
-                     <p>Развитие направлений в сторону Дальнего Востока, МТК «Север-Юг», Азово-Черноморского бассейна
-                     </p>
+                     <p>Действия Правительства по минимизации санкционного давления и развитию транспорта в новых
+                        экономических условиях</p>
                   </div>
                </div>
                <div class="accordion__item hidden">
@@ -408,13 +409,13 @@
                   </div>
                </div>
                <div class="accordion__item hidden">
-                  <span class="accordion__item-horizont">Стратегия</span>
+                  <span class="accordion__item-horizont">Международные транспортные коридоры</span>
                   <div class="accordion__content">
                      <div class="accordion__item-title">
-                        <h3>Стратегия</h3>
+                        <h3>Международные транспортные коридоры</h3>
                      </div>
-                     <p>Действия Правительства по минимизации санкционного давления и развитию транспорта в новых
-                        экономических условиях</p>
+                     <p>Развитие направлений в сторону Дальнего Востока, МТК «Север-Юг», Азово-Черноморского бассейна
+                     </p>
                   </div>
                </div>
          </section>
@@ -1892,13 +1893,13 @@
                <div class="national__title">
                   <h3 class="title">Национальная премия</h3>
                </div>
-               <h2>'Формула Движения'</h2>
+               <h2>«Формула Движения»</h2>
                <p>Национальная премия за достижения в области транспорта и транспортной инфраструктуры «Формула
                   Движения». Призвана
                   содействовать развитию транспортной инфраструктуры, повышению уровня транспортных услуг, а также
                   стимулированию
                   государственных и коммерческих структур к решению значимых проблем транспортной сферы.</p>
-               <button class="button national__button">Подробнее <span class="button-arrow"></span></button>
+               <button class="button national__button no-hover">Подробнее <span class="button-arrow"></span></button>
             </div>
          </section>
          <section class="speakers">
@@ -2137,31 +2138,31 @@
                         <img src="./img/gazprom.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box">
+                  <a href="#" class="partners__box no-hover">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/gazprombank.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box">
+                  <a href="#" class="partners__box no-hover">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/erg.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box">
+                  <a href="#" class="partners__box no-hover">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/lukoil.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box">
+                  <a href="#" class="partners__box no-hover">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/rosneft.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box">
+                  <a href="#" class="partners__box no-hover">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/bnat.svg" alt="">
@@ -2175,37 +2176,39 @@
       <footer class="footer">
          <div class="buttons-container">
             <div class="first-line">
-               <a href="#"><button class="footer__button">График мероприятий <img src="./img/calendar.svg" alt=""></button></a>
-               <a href="#"><button class="footer__button">Программа форума <img src="./img/file-text.svg" alt=""></button></a>
-               <a href="#"><button class="footer__button">План выставки <img src="./img/keypad.svg" alt=""></button></a>
+               <a href="#"><button class="footer__button no-hover">График мероприятий <img src="./img/calendar.svg" alt=""></button></a>
+               <a href="#"><button class="footer__button no-hover">Программа форума <img src="./img/file-text.svg" alt=""></button></a>
+               <a href="#"><button class="footer__button no-hover">План выставки <img src="./img/keypad.svg" alt=""></button></a>
             </div>
             <div class="second-line">
-               <a href="#"><button class="footer__button">Место проведения <img src="./img/pin.svg" alt=""></button></a>
-               <a href="#"><button class="footer__button">Информация для посетителей <img src="./img/Mask.svg" alt=""></button></a>
+               <a href="#"><button class="footer__button no-hover">Место проведения <img src="./img/pin.svg" alt=""></button></a>
+               <a href="#"><button class="footer__button no-hover">Информация для посетителей <img src="./img/Mask.svg" alt=""></button></a>
             </div>
          </div>
          <div class="footer__wrapper">
-           <a href="#">
+           <a href="#" class="no-hover">
             <img src="./img/logo-lider.svg" alt="">
            </a>
            <div class="footer__social">
-            <a href="#">
+            <a href="#" class="no-hover">
                <img src="./img/youtube.svg" alt="">
             </a>
-            <a href="#">
+            <a href="#" class="no-hover">
                <img src="./img/vk.svg" alt="">
             </a>
            </div>
-           <a href="#">
+           <a href="#" class="no-hover">
             <img src="./img/footer-logo.svg" alt="">
            </a>
          </div>
       </footer>
    </div>
-   <script src="./exhibition.js"></script>
-   <script src="./results.js"></script>
-   <script src="./news.js"></script>
-   <script src="./speaker.js"></script>
+   <script src="./js/jQuery2.2.0.js"></script>
+   <script src="./js/ScrollAnimations.js"></script>
+   <script src="./js/exhibition.js"></script>
+   <script src="./js/results.js"></script>
+   <script src="./js/news.js"></script>
+   <script src="./js/speaker.js"></script>
 </body>
 
 </html>
