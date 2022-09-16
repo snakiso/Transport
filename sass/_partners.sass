@@ -4,6 +4,9 @@
  background-size: cover
  display: flex
  flex-direction: column
+ position: relative
+ .partners-slider
+  display: none
  &__wrapper
   max-width: 1300px
   margin: auto
@@ -107,12 +110,44 @@
     
 @media screen and ( max-width: 900px )    
   .partners
+    .partners-slider
+      display: block
+      padding-bottom: 120px
+      width: 290px 
+      margin: auto
+      margin-top: 40px
+      overflow: hidden
+      .swiper-pagination
+        display: flex
+        justify-content: center
+        column-gap: 10px
+        margin-top: 20px
+      .swiper-pagination-bullet
+        display: block
+        opacity: 0.3
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background: #1A88C9
+      .swiper-pagination-bullet-active
+        opacity: 1  
+      .swiper-wrapper
+        display: flex
+        width: 100%
+      .swiper-slide
+        width: 100%
+        flex-shrink: 0
+    &__wrapper
+      padding-bottom: 120px
+      display: none
     .all-partners-mobile
+      position: absolute
       display: block
       color: #1DA29F
-      margin-top: 40px
+      bottom: 80px
       padding-left: 15px
     &__title
+      margin-top: 120px
       h3
         font-size: 40px
         margin-left: 15px
@@ -123,9 +158,4 @@
         display: none  
     &__container
       justify-content: center
-    &__box
-      display: none
-    .general-partner  
-      display: block
-      padding: 0 15px
-      width: 290px
+    

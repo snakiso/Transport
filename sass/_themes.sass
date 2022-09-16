@@ -18,7 +18,8 @@
     position: absolute
  .decor-second
   position: absolute
-  bottom: -20px
+  width: 25%
+  bottom: -80px
   z-index: 10
  .fade-right, .fade-left
   opacity: 0
@@ -119,6 +120,7 @@
   .themes
     .decor-second
       left: -16%
+      width: 30%
 
 @media screen and ( max-width: 1510px )  
   .themes
@@ -261,89 +263,97 @@
 
 @media screen and ( max-width: 768px )  
   .themes 
+    background-image: url(../img/bg-theme-mobile.png)
+    background-repeat: no-repeat
+    background-size: cover
+    .scene
+     display: none
     &__wrapper
       display: none
     &__wrapper-mobile
       padding-top: 50px
       padding-bottom: 50px
-      display: block 
-      width: 320px
+      display: flex
+      flex-direction: column
+      row-gap: 10px 
       margin: auto
       .first-line, .second-line, .third-line, .fourth-line, .fifth-line, .sixth-line, .seventh-line, .eighth-line, .ninth-line, .tenth-line
-        height: 70px 
+        height: 120%
+        h1,h2,h3,h4,h5,h6,p
+         margin: 0 
       .word-bg
         padding: 10px 10px  
       .first-line 
         padding-left: 20%
         h2
-          font-size: 30px
+          font-size: 9.375vw
           font-weight: 300
         p  
           padding-left: 10px
           font-weight: 700
-          font-size: 17px 
+          font-size: 5.3vw
       .second-line
         padding-left: 20%
         h4
-          font-size: 22px
+          font-size: 6.9vw
           font-weight: 700
         h3
           padding-left: 10px
-          font-size: 30px
+          font-size: 9.375vw
       .third-line
         padding-left: 7%
         h4
-          font-size: 25px
+          font-size: 7.8vw
         h3
           padding-left: 10px
-          font-size: 20px
+          font-size: 6.25vw
       .fourth-line
         padding-left: 22%
         h2
           padding-right: 10px
-          font-size: 36px
+          font-size: 11.25vw
         h3
-          font-size: 30px
+          font-size: 9.375vw
           font-weight: 300
       .fifth-line
         padding-left: 8%
         h2
-          font-size: 34px
+          font-size: 10.6vw
         h4
           padding-left: 10px
-          font-size: 23px 
+          font-size: 6.9vw 
           font-weight: 300 
       .sixth-line
         padding-left: 30%
         h3
-          font-size: 24px
+          font-size: 7vw
       .seventh-line
         padding-left: 20%
         h3
           padding-right: 10px
-          font-size: 25px
+          font-size: 7.1vw
           font-weight: 300
         h4
-          font-size: 24px  
+          font-size: 7vw  
       .eighth-line
         padding-left: 10%
         h2
-          font-size: 28px
+          font-size: 8.75vw
         h3
           padding-left: 10px
-          font-size: 20px
+          font-size: 6.25vw
       .ninth-line
         padding-left: 30%
         h2
-          font-size: 30px
+          font-size: 9.375vw
         h5
           padding-left: 10px
-          font-size: 18px  
+          font-size: 5.4vw  
           font-weight: 300
       .tenth-line
         padding-left: 9%
         h3
-          font-size: 24px
+          font-size: 7.1vw
           font-weight: 300            
        
     

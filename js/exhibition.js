@@ -100,3 +100,19 @@ $('[data-animation-start]').scrollAnimations({
     offset: 0.8
 });
 $containers.scrollAnimations();
+
+
+///swiper
+var swiper = new Swiper('.partners-slider', {
+    speed: 1200,
+    autoplay: {
+      delay: 5000
+    },
+    spaceBetween: 30,
+    loop: true,
+    autoHeight: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });

@@ -1,6 +1,6 @@
 let speaker = document.querySelectorAll('.speaker')
 let names = document.querySelectorAll('.swiper-slide')
-let swiper = document.querySelector('.swiper-wrapper')
+let swiperSpeakers = document.querySelector('.swiper-wrapper')
 let text = document.querySelector('.speakers__position')
 let randomX = 0
 let randomY = 0
@@ -57,7 +57,7 @@ function swiperMoveDown(){
     step = 85
   }
  step = step - 85
- swiper.style.transform = `translateY(${step}px)`
+ swiperSpeakers.style.transform = `translateY(${step}px)`
 } 
 
 
@@ -66,7 +66,7 @@ function swiperMoveUp() {
   step = -1955
  }
  step = step + 85
- swiper.style.transform = `translateY(${step}px)`
+ swiperSpeakers.style.transform = `translateY(${step}px)`
 } 
 
 
@@ -111,7 +111,7 @@ for(let i = 0; i < names.length; i++){
     names[i].classList.add('active')
     step = -i*85
     index = i
-    swiper.style.transform = `translateY(${-i*85}px)`
+    swiperSpeakers.style.transform = `translateY(${-i*85}px)`
     checkedActive()
   })
 }
