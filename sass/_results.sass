@@ -62,15 +62,18 @@
       width: 0     
     &__wrapper
       padding: 150px 0 60px 0
-      width: 320px
+      width: 100%
       overflow-x: scroll
       height: 360px
       position: relative
       svg
         display: none
-      img
+      .results__slider-img
         display: block  
         position: absolute
         left: 0px
-        transition: all .3s    
-        
+        transition: all 5s    
+    .prev-slide
+      pointer-events: none  
+  
+      

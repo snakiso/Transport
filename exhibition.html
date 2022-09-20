@@ -176,17 +176,17 @@
             </div>
             <div class="preview__motto">
                <p class="motto faded">Всё нужное рядом</p>
-               <span></span>
+               <span class="motto faded"></span>
                <p class="motto faded">Любые сложности преодолимы</p>
-               <span></span>
+               <span class="motto faded"></span>
                <p class="motto faded">Главное - работать сообща</p>
             </div>
-            <div class="show-date faded">
-               <h4>14 - 19 ноября</h4>
-               <div class="show-place">
+            <div class="show-date">
+               <h4 class="opacity faded">14 - 19 ноября</h4>
+               <div class="show-place opacity faded">
                   <p>Москва, комплекс «Гостиный Двор»</p>
                </div>
-               <button class="button register-btn no-hover">Регистрация <span class="button-arrow"></span></button>
+               <button class="button register-btn opacity faded">Регистрация <span class="button-arrow"></span></button>
             </div>
          </section>
          <section class="news">
@@ -1876,7 +1876,9 @@
                   </clipPath>
                </defs>
                </svg>
-              <img src = './img/results-mobile.png' class='results__slider'>
+              <div class="results__slider">
+               <img src = './img/results-mobile.png' class= 'results__slider-img'>
+              </div>
             </div>   
             <div class="navigation-buttons">
                <div class="prev-slide">
@@ -1888,18 +1890,20 @@
             </div>
          </section>
          <section class="national">
+            <div data-animation-container class="national__bg" data-animation-start>
+              <img src="./img/national-bg.png" alt="">
+            </div>
             <div class="national__wrapper">
-               
-               <div class="national__title">
+               <div data-animation-container class="national__title">
                   <h3 class="title">Национальная премия</h3>
                </div>
-               <h2>«Формула Движения»</h2>
-               <p>Национальная премия за достижения в области транспорта и транспортной инфраструктуры «Формула
+               <h2 data-animation-container class="opacity">«Формула Движения»</h2>
+               <p data-animation-container class="opacity">Национальная премия за достижения в области транспорта и транспортной инфраструктуры «Формула
                   Движения». Призвана
                   содействовать развитию транспортной инфраструктуры, повышению уровня транспортных услуг, а также
                   стимулированию
                   государственных и коммерческих структур к решению значимых проблем транспортной сферы.</p>
-               <button class="button national__button no-hover">Подробнее <span class="button-arrow"></span></button>
+               <button data-animation-container class="button national__button opacity">Подробнее <span class="button-arrow"></span></button>
             </div>
          </section>
          <section class="speakers">
@@ -2131,45 +2135,44 @@
                <a href="#">все Партнеры</a>
             </div>
             <div class="partners__wrapper">
-               <div class="partners__container">
-                  <a href="#" class="partners__box">
+               <div data-animation-container class="partners__container">
+                  <a data-animation-child href="#" class="partners__box">
                      <div class="partners__name"><h4>Генеральный партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/gazprom.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box no-hover">
+                  <a data-animation-child href="#" class="partners__box">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/gazprombank.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box no-hover">
+                  <a data-animation-child href="#" class="partners__box">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/erg.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box no-hover">
+                  <a data-animation-child href="#" class="partners__box">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/lukoil.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box no-hover">
+                  <a data-animation-child href="#" class="partners__box">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/rosneft.svg" alt="">
                      </div>
                   </a>
-                  <a href="#" class="partners__box no-hover">
+                  <a data-animation-child href="#" class="partners__box">
                      <div class="partners__name"><h4>партнер</h4></div>
                      <div class="partners__logo">
                         <img src="./img/bnat.svg" alt="">
                      </div>
                   </a>
-               </div>
-               
+               </div>   
             </div>
             <!--slider start-->
             <div class="partners-slider">

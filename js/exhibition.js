@@ -50,8 +50,8 @@ let video = document.querySelector('.back-video')
 let header = document.querySelector('.header')
 let title = document.querySelector('.preview__title')
 let motto = document.querySelectorAll('.motto')
+let opacity = document.querySelectorAll('.opacity')
 let dateShow = document.querySelector('.show-date')
-
 
 
 window.addEventListener('click', () => {
@@ -62,6 +62,9 @@ window.addEventListener('click', () => {
     for(let i = 0; i< motto.length; i++){
         motto[i].classList.remove('faded')
     }
+    for(let i = 0; i <opacity.length; i++){
+        opacity[i].classList.remove('faded')
+    }
     dateShow.classList.remove('faded')
 })
 window.addEventListener('scroll', () => {
@@ -71,6 +74,9 @@ window.addEventListener('scroll', () => {
     title.classList.remove('faded')
     for (let i = 0; i < motto.length; i++) {
         motto[i].classList.remove('faded')
+    }
+    for(let i = 0; i <opacity.length; i++){
+        opacity[i].classList.remove('faded')
     }
     dateShow.classList.remove('faded')
 })
@@ -97,22 +103,33 @@ var parallaxInstance = new Parallax(scene);
 ///1. ScrollAnimations 
 var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container], [data-animation-start]');
 $('[data-animation-start]').scrollAnimations({
-    offset: 0.8
+    offset: 0.3
 });
 $containers.scrollAnimations();
 
 
 ///swiper
 var swiper = new Swiper('.partners-slider', {
-    speed: 1200,
-    autoplay: {
-      delay: 5000
-    },
-    spaceBetween: 30,
-    loop: true,
-    autoHeight: true,
+    // slidesPerView: 1,
+    // effect: "creative",
+    // speed: 1200,
+    // autoplay: {
+    //    delay: 5000
+    // },
+    // spaceBetween: 30,
+    // centeredSlides: false,
+    // loop: true,
+    // autoWidth: false,
+    // autoHeight: true,
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   clickable: true
+    // }
+    effect: "flip",
+    slidesPerView: "auto",
+    centeredSlides: false,
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    }
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
