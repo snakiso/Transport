@@ -126,6 +126,7 @@ var swiper = new Swiper('.partners-slider', {
     //   clickable: true
     // }
     effect: "flip",
+    loop: true,
     slidesPerView: "auto",
     centeredSlides: false,
     pagination: {
