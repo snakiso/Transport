@@ -134,3 +134,12 @@ var swiper = new Swiper('.partners-slider', {
       clickable: true,
     },
   });
+
+
+let partnersBox = document.querySelectorAll('.partners__box')
+ 
+for(let i = 0; i<partnersBox.length; i++){
+    partnersBox[i].addEventListener('transitionend', () => {
+        partnersBox[i].style.transitionDelay = '0s'
+    })
+}
