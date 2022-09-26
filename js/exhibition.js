@@ -2,13 +2,14 @@ let accordionItem = document.querySelectorAll('.accordion__item')
 let accordionBtn = document.querySelectorAll('.accordion__button')
 let accordion = document.querySelector('.accordion')
 let height = window.innerHeight
-let heightM = window.innerHeight*0.7
+let width = window.innerWidth
+let heightM = window.innerHeight * 0.7
 
 window.addEventListener('load', () => {
-    if(window.innerWidth <= 900 ){
-        accordionItem[0].style.height = `${heightM-120}px`
-    }else{
-    accordionItem[0].style.height = `${height-120}px`
+    if (window.innerWidth <= 900) {
+        accordionItem[0].style.height = `${heightM - 120}px`
+    } else {
+        accordionItem[0].style.height = `${height - 120}px`
     }
 })
 
@@ -21,10 +22,10 @@ for (let i = 0; i < accordionItem.length; i++) {
     accordionItem[i].addEventListener('click', () => {
         addHidden()
         accordionItem[i].classList.add('active')
-        if(window.innerWidth <= 900 ){
-            accordionItem[i].style.height = `${heightM-120}px`
-        }else{
-            accordionItem[i].style.height = `${height-120}px`
+        if (window.innerWidth <= 900) {
+            accordionItem[i].style.height = `${heightM - 120}px`
+        } else {
+            accordionItem[i].style.height = `${height - 120}px`
         }
         accordionItem[i].classList.remove('hidden')
         ChangeActiveSlide()
@@ -61,7 +62,8 @@ function ChangeActiveSlide() {
     // }
 }
 // Код для видео 
-let video = document.querySelector('.back-video')
+let video = document.querySelector('.video')
+let videoBlock = document.querySelector('.back-video')
 let header = document.querySelector('.header')
 let title = document.querySelector('.preview__title')
 let motto = document.querySelectorAll('.motto')
@@ -69,28 +71,36 @@ let opacity = document.querySelectorAll('.opacity')
 let dateShow = document.querySelector('.show-date')
 
 
-window.addEventListener('click', () => {
-    video.classList.add('faded')
-    video.style.opacity = '0.2'
-    header.classList.remove('faded')
-    title.classList.remove('faded')
-    for(let i = 0; i< motto.length; i++){
-        motto[i].classList.remove('faded')
+window.addEventListener('load', () => {
+    if (height > width) {
+        video.src = "./back-blue-vert.mp4"
+    } else {
+        video.src = "./back-blue.mp4"
     }
-    for(let i = 0; i <opacity.length; i++){
-        opacity[i].classList.remove('faded')
-    }
-    dateShow.classList.remove('faded')
 })
-window.addEventListener('scroll', () => {
-    video.classList.add('faded')
-    video.style.opacity = '0.2'
+
+window.addEventListener('click', () => {
+    videoBlock.classList.add('faded')
+    videoBlock.style.opacity = '0.2'
     header.classList.remove('faded')
     title.classList.remove('faded')
     for (let i = 0; i < motto.length; i++) {
         motto[i].classList.remove('faded')
     }
-    for(let i = 0; i <opacity.length; i++){
+    for (let i = 0; i < opacity.length; i++) {
+        opacity[i].classList.remove('faded')
+    }
+    dateShow.classList.remove('faded')
+})
+window.addEventListener('scroll', () => {
+    videoBlock.classList.add('faded')
+    videoBlock.style.opacity = '0.2'
+    header.classList.remove('faded')
+    title.classList.remove('faded')
+    for (let i = 0; i < motto.length; i++) {
+        motto[i].classList.remove('faded')
+    }
+    for (let i = 0; i < opacity.length; i++) {
         opacity[i].classList.remove('faded')
     }
     dateShow.classList.remove('faded')
@@ -145,15 +155,15 @@ var swiper = new Swiper('.partners-slider', {
     slidesPerView: "auto",
     centeredSlides: false,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
-  });
+});
 
 
 let partnersBox = document.querySelectorAll('.partners__box')
- 
-for(let i = 0; i<partnersBox.length; i++){
+
+for (let i = 0; i < partnersBox.length; i++) {
     partnersBox[i].addEventListener('transitionend', () => {
         partnersBox[i].style.transitionDelay = '0s'
     })
