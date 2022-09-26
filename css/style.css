@@ -1145,6 +1145,7 @@ a {
   background-position: center;
   background-blend-mode: multiply;
   transition: background-image 0.5s ease-in-out 0s;
+  min-height: 100vh;
 }
 .accordion__item {
   position: relative;
@@ -1157,14 +1158,13 @@ a {
   cursor: pointer;
 }
 .accordion__item.active {
-  height: 750px;
   border-bottom: 1px solid #00ABEC;
 }
 .accordion__item.active .accordion__item-horizont {
   color: #00ABEC;
 }
 .accordion__item.active.hidden {
-  height: 60px;
+  height: 60px !important;
   border-bottom: 1px solid white;
 }
 .accordion__item.active.hidden .accordion__item-horizont {
@@ -1229,7 +1229,7 @@ a {
     line-height: 38.4px;
   }
   .accordion__content {
-    margin: 50% 0;
+    margin: 25% 0;
     padding: 0;
   }
   .accordion__content p {

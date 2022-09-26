@@ -1,16 +1,31 @@
 let accordionItem = document.querySelectorAll('.accordion__item')
 let accordionBtn = document.querySelectorAll('.accordion__button')
 let accordion = document.querySelector('.accordion')
+let height = window.innerHeight
+let heightM = window.innerHeight*0.7
+
+window.addEventListener('load', () => {
+    if(window.innerWidth <= 900 ){
+        accordionItem[0].style.height = `${heightM-120}px`
+    }else{
+    accordionItem[0].style.height = `${height-120}px`
+    }
+})
+
 function addHidden() {
     for (let i = 0; i < accordionItem.length; i++) {
         accordionItem[i].classList.add('hidden')
     }
 }
-
 for (let i = 0; i < accordionItem.length; i++) {
     accordionItem[i].addEventListener('click', () => {
         addHidden()
         accordionItem[i].classList.add('active')
+        if(window.innerWidth <= 900 ){
+            accordionItem[i].style.height = `${heightM-120}px`
+        }else{
+            accordionItem[i].style.height = `${height-120}px`
+        }
         accordionItem[i].classList.remove('hidden')
         ChangeActiveSlide()
     })

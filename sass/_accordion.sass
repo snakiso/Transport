@@ -6,6 +6,7 @@
  background-position: center
  background-blend-mode: multiply
  transition: background-image .5s ease-in-out 0s
+ min-height: 100vh
  &__item
   position: relative
   text-transform: uppercase
@@ -16,12 +17,12 @@
   overflow: hidden
   cursor: pointer
  &__item.active
-  height: 750px 
+  //height: 750px 
   border-bottom: 1px solid #00ABEC
   .accordion__item-horizont
    color: #00ABEC
  &__item.active.hidden
-  height: 60px 
+  height: 60px !important
   border-bottom: 1px solid white
   .accordion__item-horizont
    color: #ffffff
@@ -78,7 +79,7 @@
         padding-left: 15px
         line-height: 38.4px
     &__content 
-      margin: 50% 0
+      margin: 25% 0
       padding: 0
       p
         font-size: 20px 
