@@ -6,8 +6,7 @@ let nextNews = document.querySelector('.next-news')
 let prevNews = document.querySelector('.prev-news')
 let nextNewsAdaptive = document.querySelector('.next-news-adaptive')
 let prevNewsAdaptive = document.querySelector('.prev-news-adaptive')
-let page = 0
-
+let page = 1
 function opacityNull() {
     for (let i = 0; i < newsBox.length; i++) {
         newsBox[i].style.transitionDelay= '0s'
@@ -48,7 +47,7 @@ nextNews.addEventListener('click', async function () {
 
 prevNews.addEventListener('click', async function () {
     opacityNull()
-    if (page == 0) {
+    if (page == 1) {
         page = 10
     }
     page = page - 1
