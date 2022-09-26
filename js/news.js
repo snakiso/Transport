@@ -29,10 +29,15 @@ async function changeContent() {
     let json = await response.json();
     for (let i = 0; i < json.length; i++) {
         newsName[i].textContent = json[i].Name
-        newsContent[i].textContent = json[i].Description
+        newsContent[i].textContent = json[i].Description.slice(0, 160) + "..."
         date[i].textContent = json[i].Date
     }
 }
+
+window.addEventListener('load', async function () {
+    changeContent()
+})
+
 
 nextNews.addEventListener('click', async function () {
     opacityNull()

@@ -32,6 +32,7 @@ a {
 }
 
 .button {
+  display: inline-block;
   width: 220px;
   height: 50px;
   background-color: #B72F92;
@@ -513,6 +514,9 @@ a {
 .preview .show-date .register-btn {
   margin-top: 50px;
   padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .preview .show-date .register-btn:hover .button-arrow:before {
   right: -35px;
@@ -1634,6 +1638,9 @@ a {
 .national__button {
   margin-left: 25.6%;
   margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .national__button .button-arrow:after {
   transform: scaleX(0) rotate(-45deg);
