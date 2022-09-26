@@ -6,6 +6,7 @@ let nextNews = document.querySelector('.next-news')
 let prevNews = document.querySelector('.prev-news')
 let nextNewsAdaptive = document.querySelector('.next-news-adaptive')
 let prevNewsAdaptive = document.querySelector('.prev-news-adaptive')
+let readMore = document.querySelectorAll('.read-more')
 let page = 1
 function opacityNull() {
     for (let i = 0; i < newsBox.length; i++) {
@@ -30,6 +31,7 @@ async function changeContent() {
         newsName[i].textContent = json[i].Name
         newsContent[i].textContent = json[i].Description.slice(0, 160) + "..."
         date[i].textContent = json[i].Date
+        readMore[i].href= json[i].Link
     }
 }
 
