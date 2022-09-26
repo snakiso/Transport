@@ -144,14 +144,3 @@ for(let i = 0; i<partnersBox.length; i++){
     })
 }
 
-
-//проверка на наличие секции partners 
-
-let sectionPartners = document.querySelector('.partners');
-let sectionSpeakers = document.querySelector('.speakers');
-
-window.addEventListener('load', () => {
-    if(!sectionPartners){
-        sectionSpeakers.style.marginBottom = '424px'
-    }
-})

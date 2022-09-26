@@ -12,6 +12,7 @@ body {
 main {
   position: relative;
   z-index: 50;
+  margin-bottom: 424px;
 }
 
 footer {
@@ -46,6 +47,11 @@ a {
 @media screen and (max-width: 1280px) {
   .no-hover {
     pointer-events: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  main {
+    margin-bottom: 748px;
   }
 }
 @font-face {
@@ -936,6 +942,33 @@ a {
   align-items: center;
   height: 120px;
 }
+.themes .first-line .fs-80, .themes .second-line .fs-80, .themes .third-line .fs-80, .themes .fourth-line .fs-80, .themes .fifth-line .fs-80, .themes .sixth-line .fs-80, .themes .seventh-line .fs-80, .themes .eighth-line .fs-80, .themes .ninth-line .fs-80, .themes .tenth-line .fs-80 {
+  font-size: 80px;
+}
+.themes .first-line .fs-62, .themes .second-line .fs-62, .themes .third-line .fs-62, .themes .fourth-line .fs-62, .themes .fifth-line .fs-62, .themes .sixth-line .fs-62, .themes .seventh-line .fs-62, .themes .eighth-line .fs-62, .themes .ninth-line .fs-62, .themes .tenth-line .fs-62 {
+  font-size: 62px;
+}
+.themes .first-line .fs-46, .themes .second-line .fs-46, .themes .third-line .fs-46, .themes .fourth-line .fs-46, .themes .fifth-line .fs-46, .themes .sixth-line .fs-46, .themes .seventh-line .fs-46, .themes .eighth-line .fs-46, .themes .ninth-line .fs-46, .themes .tenth-line .fs-46 {
+  font-size: 46px;
+}
+.themes .first-line .fs-30, .themes .second-line .fs-30, .themes .third-line .fs-30, .themes .fourth-line .fs-30, .themes .fifth-line .fs-30, .themes .sixth-line .fs-30, .themes .seventh-line .fs-30, .themes .eighth-line .fs-30, .themes .ninth-line .fs-30, .themes .tenth-line .fs-30 {
+  font-size: 30px;
+}
+.themes .first-line .fw-200, .themes .second-line .fw-200, .themes .third-line .fw-200, .themes .fourth-line .fw-200, .themes .fifth-line .fw-200, .themes .sixth-line .fw-200, .themes .seventh-line .fw-200, .themes .eighth-line .fw-200, .themes .ninth-line .fw-200, .themes .tenth-line .fw-200 {
+  font-weight: 200;
+}
+.themes .first-line .fw-300, .themes .second-line .fw-300, .themes .third-line .fw-300, .themes .fourth-line .fw-300, .themes .fifth-line .fw-300, .themes .sixth-line .fw-300, .themes .seventh-line .fw-300, .themes .eighth-line .fw-300, .themes .ninth-line .fw-300, .themes .tenth-line .fw-300 {
+  font-weight: 300;
+}
+.themes .first-line .fw-400, .themes .second-line .fw-400, .themes .third-line .fw-400, .themes .fourth-line .fw-400, .themes .fifth-line .fw-400, .themes .sixth-line .fw-400, .themes .seventh-line .fw-400, .themes .eighth-line .fw-400, .themes .ninth-line .fw-400, .themes .tenth-line .fw-400 {
+  font-weight: 400;
+}
+.themes .first-line .fw-700, .themes .second-line .fw-700, .themes .third-line .fw-700, .themes .fourth-line .fw-700, .themes .fifth-line .fw-700, .themes .sixth-line .fw-700, .themes .seventh-line .fw-700, .themes .eighth-line .fw-700, .themes .ninth-line .fw-700, .themes .tenth-line .fw-700 {
+  font-weight: 700;
+}
+.themes .first-line .padding-30, .themes .second-line .padding-30, .themes .third-line .padding-30, .themes .fourth-line .padding-30, .themes .fifth-line .padding-30, .themes .sixth-line .padding-30, .themes .seventh-line .padding-30, .themes .eighth-line .padding-30, .themes .ninth-line .padding-30, .themes .tenth-line .padding-30 {
+  padding: 0 30px;
+}
 .themes__wrapper {
   max-width: 1510px;
   margin: auto;
@@ -947,98 +980,17 @@ a {
 .themes__wrapper .first-line {
   padding-left: 385px;
 }
-.themes__wrapper .first-line h3 {
-  font-size: 80px;
-  font-weight: 400;
-}
-.themes__wrapper .first-line p {
-  font-size: 46px;
-  font-weight: 700;
-  padding: 0 30px;
-}
-.themes__wrapper .second-line {
+.themes__wrapper .second-line, .themes__wrapper .fourth-line {
   padding-left: 70px;
-}
-.themes__wrapper .second-line p {
-  font-size: 46px;
-  font-weight: 300;
-}
-.themes__wrapper .second-line h2, .themes__wrapper .second-line h4 {
-  font-size: 80px;
-  font-weight: 700;
-  padding: 0 30px;
-}
-.themes__wrapper .second-line h4 {
-  font-size: 46px;
-}
-.themes__wrapper .second-line h3 {
-  font-size: 46px;
 }
 .themes__wrapper .third-line {
   padding-left: 400px;
 }
-.themes__wrapper .third-line h3 {
-  font-size: 46px;
-  padding: 0 30px;
-}
-.themes__wrapper .third-line p {
-  padding: 0 30px;
-  font-size: 32px;
-  font-weight: 400;
-}
-.themes__wrapper .third-line h2 {
-  font-size: 80px;
-}
-.themes__wrapper .fourth-line {
-  padding-left: 70px;
-}
-.themes__wrapper .fourth-line h2 {
-  font-size: 80px;
-  font-weight: 700;
-  padding-right: 30px;
-}
-.themes__wrapper .fourth-line h4 {
-  font-size: 46px;
-  font-weight: 400;
-}
-.themes__wrapper .fourth-line h3, .themes__wrapper .fourth-line p {
-  font-size: 62px;
-  font-weight: 700;
-  padding: 0 30px;
-}
-.themes__wrapper .fourth-line p {
-  font-weight: 200;
-}
 .themes__wrapper .fifth-line {
-  padding-left: 520px;
-}
-.themes__wrapper .fifth-line p {
-  font-size: 46px;
-  font-weight: 300;
-  padding-right: 30px;
-}
-.themes__wrapper .fifth-line h3 {
-  font-size: 62px;
-  padding: 0 30px;
-}
-.themes__wrapper .fifth-line h4 {
-  font-size: 62px;
-  font-weight: 400;
+  padding-left: 490px;
 }
 .themes__wrapper .sixth-line {
-  padding-left: 280px;
-}
-.themes__wrapper .sixth-line p {
-  font-size: 46px;
-  font-weight: 300;
-  padding-right: 30px;
-}
-.themes__wrapper .sixth-line h4 {
-  font-size: 46px;
-}
-.themes__wrapper .sixth-line h2 {
-  font-size: 80px;
-  padding: 0 30px;
+  padding-left: 250px;
 }
 
 @media screen and (max-width: 1920px) {
@@ -1051,110 +1003,33 @@ a {
   .themes .decor-second {
     display: none;
   }
+  .themes__wrapper .fs-80 {
+    font-size: 65px !important;
+  }
+  .themes__wrapper .fs-46 {
+    font-size: 38px !important;
+  }
   .themes__wrapper .first-line {
     padding-left: 30%;
-  }
-  .themes__wrapper .first-line h3 {
-    font-size: 65px;
-  }
-  .themes__wrapper .first-line p {
-    font-size: 38px;
-    font-weight: 700;
-    padding: 0 30px;
   }
   .themes__wrapper .second-line {
     padding-left: 5%;
   }
-  .themes__wrapper .second-line p {
-    font-size: 38px;
-    font-weight: 300;
-  }
-  .themes__wrapper .second-line h2, .themes__wrapper .second-line h4 {
-    font-size: 65px;
-    font-weight: 700;
-    padding: 0 30px;
-  }
-  .themes__wrapper .second-line h4 {
-    font-size: 38px;
-  }
-  .themes__wrapper .second-line h3 {
-    font-size: 38px;
-  }
   .themes__wrapper .third-line {
     padding-left: 25%;
-  }
-  .themes__wrapper .third-line h3 {
-    font-size: 38px;
-    padding: 0 30px;
-  }
-  .themes__wrapper .third-line p {
-    padding: 0 30px;
-    font-size: 32px;
-    font-weight: 400;
-  }
-  .themes__wrapper .third-line h2 {
-    font-size: 66px;
   }
   .themes__wrapper .fourth-line {
     padding-left: 5%;
   }
-  .themes__wrapper .fourth-line h2 {
-    font-size: 50px;
-    font-weight: 700;
-    padding-right: 30px;
-  }
-  .themes__wrapper .fourth-line h4 {
-    font-size: 38px;
-    font-weight: 400;
-  }
-  .themes__wrapper .fourth-line h3, .themes__wrapper .fourth-line p {
-    font-size: 50px;
-    font-weight: 700;
-    padding: 0 30px;
-  }
-  .themes__wrapper .fourth-line p {
-    font-weight: 200;
-  }
   .themes__wrapper .fifth-line {
     padding-left: 26%;
-  }
-  .themes__wrapper .fifth-line p {
-    font-size: 38px;
-    font-weight: 300;
-    padding-right: 30px;
-  }
-  .themes__wrapper .fifth-line h3 {
-    font-size: 50px;
-    padding: 0 30px;
-  }
-  .themes__wrapper .fifth-line h4 {
-    font-size: 50px;
-    font-weight: 400;
   }
   .themes__wrapper .sixth-line {
     padding-left: 22%;
   }
-  .themes__wrapper .sixth-line p {
-    font-size: 38px;
-    font-weight: 300;
-    padding-right: 30px;
-  }
-  .themes__wrapper .sixth-line h4 {
-    font-size: 38px;
-  }
-  .themes__wrapper .sixth-line h2 {
-    font-size: 66px;
-    padding: 0 30px;
-  }
 }
 @media screen and (max-width: 1200px) {
-  .themes__wrapper .second-line p, .themes__wrapper .third-line p {
-    display: none;
-  }
-  .themes__wrapper .second-line h4 {
-    display: none;
-  }
-  .themes__wrapper .fourth-line h3 {
+  .themes__wrapper .hidden {
     display: none;
   }
   .themes__wrapper .fifth-line {
@@ -1164,60 +1039,15 @@ a {
     padding-left: 10%;
   }
 }
-@media screen and (max-width: 900px) {
-  .themes__wrapper .first-line h3 {
-    font-size: 50px;
+@media screen and (max-width: 1000px) {
+  .themes__wrapper .fs-80 {
+    font-size: 50px !important;
   }
-  .themes__wrapper .first-line p {
-    font-size: 30px;
+  .themes__wrapper .fs-62 {
+    font-size: 46px !important;
   }
-  .themes__wrapper .second-line p {
-    font-size: 30px;
-  }
-  .themes__wrapper .second-line h2, .themes__wrapper .second-line h4 {
-    font-size: 50px;
-  }
-  .themes__wrapper .second-line h4 {
-    font-size: 30px;
-  }
-  .themes__wrapper .second-line h3 {
-    font-size: 30px;
-  }
-  .themes__wrapper .third-line h3 {
-    font-size: 30px;
-  }
-  .themes__wrapper .third-line p {
-    font-size: 32px;
-  }
-  .themes__wrapper .third-line h2 {
-    font-size: 50px;
-  }
-  .themes__wrapper .fourth-line h2 {
-    font-size: 50px;
-  }
-  .themes__wrapper .fourth-line h4 {
-    font-size: 30px;
-  }
-  .themes__wrapper .fourth-line h3, .themes__wrapper .fourth-line p {
-    font-size: 50px;
-  }
-  .themes__wrapper .fifth-line p {
-    font-size: 30px;
-  }
-  .themes__wrapper .fifth-line h3 {
-    font-size: 20px;
-  }
-  .themes__wrapper .fifth-line h4 {
-    font-size: 50px;
-  }
-  .themes__wrapper .sixth-line p {
-    font-size: 30px;
-  }
-  .themes__wrapper .sixth-line h4 {
-    font-size: 30px;
-  }
-  .themes__wrapper .sixth-line h2 {
-    font-size: 50px;
+  .themes__wrapper .fs-46 {
+    font-size: 30px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1243,6 +1073,33 @@ a {
   .themes__wrapper-mobile .first-line, .themes__wrapper-mobile .second-line, .themes__wrapper-mobile .third-line, .themes__wrapper-mobile .fourth-line, .themes__wrapper-mobile .fifth-line, .themes__wrapper-mobile .sixth-line, .themes__wrapper-mobile .seventh-line, .themes__wrapper-mobile .eighth-line, .themes__wrapper-mobile .ninth-line, .themes__wrapper-mobile .tenth-line {
     height: 120%;
   }
+  .themes__wrapper-mobile .first-line .fs-5, .themes__wrapper-mobile .second-line .fs-5, .themes__wrapper-mobile .third-line .fs-5, .themes__wrapper-mobile .fourth-line .fs-5, .themes__wrapper-mobile .fifth-line .fs-5, .themes__wrapper-mobile .sixth-line .fs-5, .themes__wrapper-mobile .seventh-line .fs-5, .themes__wrapper-mobile .eighth-line .fs-5, .themes__wrapper-mobile .ninth-line .fs-5, .themes__wrapper-mobile .tenth-line .fs-5 {
+    font-size: 5.3vw;
+  }
+  .themes__wrapper-mobile .first-line .fs-6, .themes__wrapper-mobile .second-line .fs-6, .themes__wrapper-mobile .third-line .fs-6, .themes__wrapper-mobile .fourth-line .fs-6, .themes__wrapper-mobile .fifth-line .fs-6, .themes__wrapper-mobile .sixth-line .fs-6, .themes__wrapper-mobile .seventh-line .fs-6, .themes__wrapper-mobile .eighth-line .fs-6, .themes__wrapper-mobile .ninth-line .fs-6, .themes__wrapper-mobile .tenth-line .fs-6 {
+    font-size: 6.9vw;
+  }
+  .themes__wrapper-mobile .first-line .fs-7, .themes__wrapper-mobile .second-line .fs-7, .themes__wrapper-mobile .third-line .fs-7, .themes__wrapper-mobile .fourth-line .fs-7, .themes__wrapper-mobile .fifth-line .fs-7, .themes__wrapper-mobile .sixth-line .fs-7, .themes__wrapper-mobile .seventh-line .fs-7, .themes__wrapper-mobile .eighth-line .fs-7, .themes__wrapper-mobile .ninth-line .fs-7, .themes__wrapper-mobile .tenth-line .fs-7 {
+    font-size: 7.8vw;
+  }
+  .themes__wrapper-mobile .first-line .fs-8, .themes__wrapper-mobile .second-line .fs-8, .themes__wrapper-mobile .third-line .fs-8, .themes__wrapper-mobile .fourth-line .fs-8, .themes__wrapper-mobile .fifth-line .fs-8, .themes__wrapper-mobile .sixth-line .fs-8, .themes__wrapper-mobile .seventh-line .fs-8, .themes__wrapper-mobile .eighth-line .fs-8, .themes__wrapper-mobile .ninth-line .fs-8, .themes__wrapper-mobile .tenth-line .fs-8 {
+    font-size: 8.75vw;
+  }
+  .themes__wrapper-mobile .first-line .fs-9, .themes__wrapper-mobile .second-line .fs-9, .themes__wrapper-mobile .third-line .fs-9, .themes__wrapper-mobile .fourth-line .fs-9, .themes__wrapper-mobile .fifth-line .fs-9, .themes__wrapper-mobile .sixth-line .fs-9, .themes__wrapper-mobile .seventh-line .fs-9, .themes__wrapper-mobile .eighth-line .fs-9, .themes__wrapper-mobile .ninth-line .fs-9, .themes__wrapper-mobile .tenth-line .fs-9 {
+    font-size: 9.375vw;
+  }
+  .themes__wrapper-mobile .first-line .fs-10, .themes__wrapper-mobile .second-line .fs-10, .themes__wrapper-mobile .third-line .fs-10, .themes__wrapper-mobile .fourth-line .fs-10, .themes__wrapper-mobile .fifth-line .fs-10, .themes__wrapper-mobile .sixth-line .fs-10, .themes__wrapper-mobile .seventh-line .fs-10, .themes__wrapper-mobile .eighth-line .fs-10, .themes__wrapper-mobile .ninth-line .fs-10, .themes__wrapper-mobile .tenth-line .fs-10 {
+    font-size: 10.6vw;
+  }
+  .themes__wrapper-mobile .first-line .fs-11, .themes__wrapper-mobile .second-line .fs-11, .themes__wrapper-mobile .third-line .fs-11, .themes__wrapper-mobile .fourth-line .fs-11, .themes__wrapper-mobile .fifth-line .fs-11, .themes__wrapper-mobile .sixth-line .fs-11, .themes__wrapper-mobile .seventh-line .fs-11, .themes__wrapper-mobile .eighth-line .fs-11, .themes__wrapper-mobile .ninth-line .fs-11, .themes__wrapper-mobile .tenth-line .fs-11 {
+    font-size: 11.25vw;
+  }
+  .themes__wrapper-mobile .first-line .padding-left-10, .themes__wrapper-mobile .second-line .padding-left-10, .themes__wrapper-mobile .third-line .padding-left-10, .themes__wrapper-mobile .fourth-line .padding-left-10, .themes__wrapper-mobile .fifth-line .padding-left-10, .themes__wrapper-mobile .sixth-line .padding-left-10, .themes__wrapper-mobile .seventh-line .padding-left-10, .themes__wrapper-mobile .eighth-line .padding-left-10, .themes__wrapper-mobile .ninth-line .padding-left-10, .themes__wrapper-mobile .tenth-line .padding-left-10 {
+    padding-left: 10px;
+  }
+  .themes__wrapper-mobile .first-line .padding-right-10, .themes__wrapper-mobile .second-line .padding-right-10, .themes__wrapper-mobile .third-line .padding-right-10, .themes__wrapper-mobile .fourth-line .padding-right-10, .themes__wrapper-mobile .fifth-line .padding-right-10, .themes__wrapper-mobile .sixth-line .padding-right-10, .themes__wrapper-mobile .seventh-line .padding-right-10, .themes__wrapper-mobile .eighth-line .padding-right-10, .themes__wrapper-mobile .ninth-line .padding-right-10, .themes__wrapper-mobile .tenth-line .padding-right-10 {
+    padding-right: 10px;
+  }
   .themes__wrapper-mobile .first-line h1, .themes__wrapper-mobile .first-line h2, .themes__wrapper-mobile .first-line h3, .themes__wrapper-mobile .first-line h4, .themes__wrapper-mobile .first-line h5, .themes__wrapper-mobile .first-line h6, .themes__wrapper-mobile .first-line p, .themes__wrapper-mobile .second-line h1, .themes__wrapper-mobile .second-line h2, .themes__wrapper-mobile .second-line h3, .themes__wrapper-mobile .second-line h4, .themes__wrapper-mobile .second-line h5, .themes__wrapper-mobile .second-line h6, .themes__wrapper-mobile .second-line p, .themes__wrapper-mobile .third-line h1, .themes__wrapper-mobile .third-line h2, .themes__wrapper-mobile .third-line h3, .themes__wrapper-mobile .third-line h4, .themes__wrapper-mobile .third-line h5, .themes__wrapper-mobile .third-line h6, .themes__wrapper-mobile .third-line p, .themes__wrapper-mobile .fourth-line h1, .themes__wrapper-mobile .fourth-line h2, .themes__wrapper-mobile .fourth-line h3, .themes__wrapper-mobile .fourth-line h4, .themes__wrapper-mobile .fourth-line h5, .themes__wrapper-mobile .fourth-line h6, .themes__wrapper-mobile .fourth-line p, .themes__wrapper-mobile .fifth-line h1, .themes__wrapper-mobile .fifth-line h2, .themes__wrapper-mobile .fifth-line h3, .themes__wrapper-mobile .fifth-line h4, .themes__wrapper-mobile .fifth-line h5, .themes__wrapper-mobile .fifth-line h6, .themes__wrapper-mobile .fifth-line p, .themes__wrapper-mobile .sixth-line h1, .themes__wrapper-mobile .sixth-line h2, .themes__wrapper-mobile .sixth-line h3, .themes__wrapper-mobile .sixth-line h4, .themes__wrapper-mobile .sixth-line h5, .themes__wrapper-mobile .sixth-line h6, .themes__wrapper-mobile .sixth-line p, .themes__wrapper-mobile .seventh-line h1, .themes__wrapper-mobile .seventh-line h2, .themes__wrapper-mobile .seventh-line h3, .themes__wrapper-mobile .seventh-line h4, .themes__wrapper-mobile .seventh-line h5, .themes__wrapper-mobile .seventh-line h6, .themes__wrapper-mobile .seventh-line p, .themes__wrapper-mobile .eighth-line h1, .themes__wrapper-mobile .eighth-line h2, .themes__wrapper-mobile .eighth-line h3, .themes__wrapper-mobile .eighth-line h4, .themes__wrapper-mobile .eighth-line h5, .themes__wrapper-mobile .eighth-line h6, .themes__wrapper-mobile .eighth-line p, .themes__wrapper-mobile .ninth-line h1, .themes__wrapper-mobile .ninth-line h2, .themes__wrapper-mobile .ninth-line h3, .themes__wrapper-mobile .ninth-line h4, .themes__wrapper-mobile .ninth-line h5, .themes__wrapper-mobile .ninth-line h6, .themes__wrapper-mobile .ninth-line p, .themes__wrapper-mobile .tenth-line h1, .themes__wrapper-mobile .tenth-line h2, .themes__wrapper-mobile .tenth-line h3, .themes__wrapper-mobile .tenth-line h4, .themes__wrapper-mobile .tenth-line h5, .themes__wrapper-mobile .tenth-line h6, .themes__wrapper-mobile .tenth-line p {
     margin: 0;
   }
@@ -1252,102 +1109,32 @@ a {
   .themes__wrapper-mobile .first-line {
     padding-left: 20%;
   }
-  .themes__wrapper-mobile .first-line h2 {
-    font-size: 9.375vw;
-    font-weight: 300;
-  }
-  .themes__wrapper-mobile .first-line p {
-    padding-left: 10px;
-    font-weight: 700;
-    font-size: 5.3vw;
-  }
   .themes__wrapper-mobile .second-line {
     padding-left: 20%;
-  }
-  .themes__wrapper-mobile .second-line h4 {
-    font-size: 6.9vw;
-    font-weight: 700;
-  }
-  .themes__wrapper-mobile .second-line h3 {
-    padding-left: 10px;
-    font-size: 9.375vw;
   }
   .themes__wrapper-mobile .third-line {
     padding-left: 7%;
   }
-  .themes__wrapper-mobile .third-line h4 {
-    font-size: 7.8vw;
-  }
-  .themes__wrapper-mobile .third-line h3 {
-    padding-left: 10px;
-    font-size: 6.25vw;
-  }
   .themes__wrapper-mobile .fourth-line {
     padding-left: 22%;
-  }
-  .themes__wrapper-mobile .fourth-line h2 {
-    padding-right: 10px;
-    font-size: 11.25vw;
-  }
-  .themes__wrapper-mobile .fourth-line h3 {
-    font-size: 9.375vw;
-    font-weight: 300;
   }
   .themes__wrapper-mobile .fifth-line {
     padding-left: 8%;
   }
-  .themes__wrapper-mobile .fifth-line h2 {
-    font-size: 10.6vw;
-  }
-  .themes__wrapper-mobile .fifth-line h4 {
-    padding-left: 10px;
-    font-size: 6.9vw;
-    font-weight: 300;
-  }
   .themes__wrapper-mobile .sixth-line {
     padding-left: 30%;
-  }
-  .themes__wrapper-mobile .sixth-line h3 {
-    font-size: 7vw;
   }
   .themes__wrapper-mobile .seventh-line {
     padding-left: 20%;
   }
-  .themes__wrapper-mobile .seventh-line h3 {
-    padding-right: 10px;
-    font-size: 7.1vw;
-    font-weight: 300;
-  }
-  .themes__wrapper-mobile .seventh-line h4 {
-    font-size: 7vw;
-  }
   .themes__wrapper-mobile .eighth-line {
     padding-left: 10%;
-  }
-  .themes__wrapper-mobile .eighth-line h2 {
-    font-size: 8.75vw;
-  }
-  .themes__wrapper-mobile .eighth-line h3 {
-    padding-left: 10px;
-    font-size: 6.25vw;
   }
   .themes__wrapper-mobile .ninth-line {
     padding-left: 30%;
   }
-  .themes__wrapper-mobile .ninth-line h2 {
-    font-size: 9.375vw;
-  }
-  .themes__wrapper-mobile .ninth-line h5 {
-    padding-left: 10px;
-    font-size: 5.4vw;
-    font-weight: 300;
-  }
   .themes__wrapper-mobile .tenth-line {
     padding-left: 9%;
-  }
-  .themes__wrapper-mobile .tenth-line h3 {
-    font-size: 7.1vw;
-    font-weight: 300;
   }
 }
 .accordion {
@@ -2015,7 +1802,6 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 424px;
 }
 .partners .partners-slider {
   display: none;
@@ -2161,9 +1947,6 @@ a {
   }
 }
 @media screen and (max-width: 900px) {
-  .partners {
-    margin-bottom: 748px;
-  }
   .partners .partners-slider {
     display: block;
     padding-bottom: 120px;
