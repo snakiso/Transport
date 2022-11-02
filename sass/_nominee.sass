@@ -1,0 +1,190 @@
+.nominee
+ background-image: url(../img/card/bg.png)
+ background-repeat: no-repeat
+ background-size: cover
+ min-height: 100vh
+ padding-bottom: 300px
+ .title
+  font-size: 80px
+  font-weight: 700
+  margin: 0
+  text-transform: uppercase
+  color: #fff
+  padding-left: 24.6%
+  font-family: 'Bebas Neue'
+  width: fit-content
+  line-height: 140%
+  padding-right: 40px
+  background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.34) 0.01%, rgba(83, 83, 156, 0.68) 22.92%, rgba(32, 139, 201, 0.68) 50.52%, rgba(29, 162, 158, 0.68) 99.99%)
+ &__block
+  position: relative
+  max-width: 1300px
+  margin: 160px auto 0px auto
+  background-image: url(../img/card/block-bg.png)
+  background-repeat: no-repeat
+  background-size: cover
+ &__title
+  display: flex
+  column-gap: 50px
+  position: absolute
+  top: -60px
+  left: 80px
+  h3
+   margin: 0
+   font-size: 50px
+   text-transform: uppercase
+   font-family: 'Bebas Neue'
+   max-width: 640px
+   display: flex
+   align-items: flex-end
+ &__second-title
+  font-size: 46px
+  font-family: 'Bebas Neue'
+  color: rgba(0, 178, 245, 1)
+  padding-top: 180px
+  max-width: 920px
+  padding-left: 110px
+ &__info
+  margin-top: 60px
+  display: flex
+  column-gap: 100px
+  padding-left: 110px
+ &__text
+  max-width: 770px
+  font-size: 20px
+  p
+   margin-top: 0
+   margin-bottom: 40px
+ &__links
+  display: flex
+  flex-direction: column  
+  row-gap: 30px
+  .link-box
+   display: flex
+   align-items: center 
+   column-gap: 15px
+   span
+    color: rgba(0, 178, 245, 1)
+ &__gallery
+  margin-top: 160px
+  margin-left: 110px
+  padding-bottom: 200px
+  overflow: hidden
+  max-width: 1080px
+  h4
+   font-size: 40px
+   font-family: 'Bebas Neue'
+   font-weight: 700
+ .nominee-slider
+  position: relative
+  .swiper-wrapper
+   display: flex  
+  .swiper-button-next,
+  .swiper-button-prev
+   position: absolute 
+   top: -75px
+   transform: translateY(-50%)
+   height: 39px
+  .swiper-button-next
+   right: 0px
+  .swiper-button-prev
+   right: 80px  
+
+@media screen and ( max-width: 1920px )
+ .nominee
+  .title
+   padding-left: 15.3%  
+
+@media screen and ( max-width: 1440px )
+ .nominee
+  .title
+   padding-left: 4.3%     
+
+@media screen and ( max-width: 1280px )
+ .nominee
+  .title
+   padding-left: 4.3%  
+   font-size: 70px
+  &__block
+    max-width: 1200px 
+    margin: 160px 20px 0 20px
+  &__gallery
+    margin: 50px auto     
+    width: calc( 100% - 140px )
+  &__second-title
+    padding-left: 70px
+  &__info
+    padding-left: 70px     
+
+@media screen and ( max-width: 1100px ) 
+ .nominee
+  .title
+    font-size: 38px
+  &__second-title
+    padding-top: 80px
+    font-size: 26px
+    max-width: 450px  
+  &__title
+    top: -30px
+    h3
+      font-size: 28px  
+      max-width: 440px
+    img
+      width: 60px
+      height: 80px
+  &__info
+    flex-direction: column  
+  &__links
+    flex-direction: row
+    column-gap: 40px    
+  &__text
+    font-size: 16px
+    padding-right: 20px  
+
+@media screen and ( max-width: 768px ) 
+ .nominee
+  .title
+    font-size: 32px
+  &__second-title
+    padding-left: 25px
+    padding-top: 80px
+    font-size: 24px
+    max-width: 450px  
+  &__logo
+    img
+      width: 170px  
+  &__title
+    top: -30px
+    left: 20px
+    h3
+      font-size: 28px  
+      max-width: 440px
+    img
+      width: 60px
+      height: 80px
+  &__info
+    flex-direction: column  
+    padding-left: 25px
+  &__links
+    flex-direction: column
+    column-gap: 40px    
+  &__text
+    font-size: 16px
+    padding-right: 20px     
+  &__gallery
+    h4
+      font-size: 22px
+  .nominee-slider 
+    .swiper-button-prev,.swiper-button-next
+      height: 17px  
+      width: 10px 
+      bottom: -80px
+      top: auto
+      left: calc( 50% - 20px )
+      img
+        height: 17px  
+        width: 10px     
+    .swiper-button-prev
+      left: calc( 50% - 20px )
+    .swiper-button-next  
+      left: calc( 50% + 20px )

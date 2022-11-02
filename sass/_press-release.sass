@@ -1,0 +1,113 @@
+.press-release
+ background-image: url(../img/press-release/bg.png)
+ background-repeat: no-repeat
+ background-size: cover
+ min-height: 100vh
+ padding-bottom: 300px
+ .title
+  font-size: 80px
+  font-weight: 700
+  margin: 0
+  text-transform: uppercase
+  color: #fff
+  padding-left: 24.6%
+  font-family: 'Bebas Neue'
+  width: fit-content
+  line-height: 140%
+  padding-right: 40px
+  background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.34) 0.01%, rgba(83, 83, 156, 0.68) 22.92%, rgba(32, 139, 201, 0.68) 50.52%, rgba(29, 162, 158, 0.68) 99.99%)
+ &__title
+  width: 1300px
+  height: 590px
+  margin: auto
+  margin-top: 110px
+  background-image: url(../img/press-release/title-bg.png)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  position: relative
+  img
+   position: absolute
+   left: 50%
+   top: 50%
+   transform: translate(-50%, -50%)
+  .title-text
+   background: rgba(38, 52, 140, 1)
+   max-width: 870px
+   position: absolute
+   right: 110px
+   bottom: -220px
+   .inner-box
+    padding: 40px 60px 
+    p
+     font-size: 36px 
+ &__date    
+  display: flex
+  justify-content: space-between
+  align-items: center
+  span
+   color: rgba(0, 178, 245, 1) 
+   font-size: 20px
+  .decor-line
+   content: ''
+   width: 60%
+   height: 2px
+   background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.5) 0.01%, #53539C 22.92%, #208BC9 50.52%, #1DA29E 99.99%)
+
+@media screen and ( max-width: 1920px )
+ .press-release
+  .title
+   padding-left: 15.3%     
+
+@media screen and ( max-width: 1300px )
+ .press-release
+  .title
+   font-size: 50px
+   padding-left: 15.3%  
+  &__title
+   width: calc( 100% - 140px ) 
+   background-size: contain
+   .title-text
+    max-width: 700px
+    right: 50px
+    bottom: -120px
+    .inner-box
+     p
+      font-size: 26px
+
+@media screen and ( max-width: 1300px )
+ .press-release
+  .title
+   font-size: 50px
+   padding-left: 15.3%  
+  &__title
+   background-size: contain
+   height: 300px
+   img
+    width: 30%
+   .title-text
+    width: 100%
+    max-width: 700px
+    left: 50%
+    transform: translate(-50%)
+    right: auto
+    bottom: -75%
+    .inner-box
+     p
+      font-size: 22px 
+
+@media screen and ( max-width: 500px )  
+ .press-release
+  &__title
+   width: 360px
+   img
+    width: 50%
+   .title-text
+    bottom: -65%
+    .inner-box
+     p
+      font-size: 20px 
+     span
+      font-size: 14px 
+     .decor-line
+      width: 40% 

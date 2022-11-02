@@ -1,0 +1,138 @@
+.best-solutions
+ background-image: url(../img/card/bg.png)
+ background-repeat: no-repeat
+ background-size: cover
+ min-height: 100vh
+ padding-bottom: 300px
+ .title
+  font-size: 80px
+  font-weight: 700
+  margin: 0
+  text-transform: uppercase
+  color: #fff
+  padding-left: 24.6%
+  font-family: 'Bebas Neue'
+  width: fit-content
+  line-height: 140%
+  padding-right: 40px
+  background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.34) 0.01%, rgba(83, 83, 156, 0.68) 22.92%, rgba(32, 139, 201, 0.68) 50.52%, rgba(29, 162, 158, 0.68) 99.99%)
+ .nominees-links
+  display: flex
+  margin: auto
+  max-width: 1000px
+  justify-content: space-between
+  margin-top: 140px
+  .link-box
+   width: 110px
+   img
+    opacity: 0.5
+   .nominees-number
+    background: rgba(26, 136, 201, 0.8)
+    display: flex
+    justify-content: end
+    padding-right: 10px
+    width: 80px
+    margin-right: 0
+    margin-left: auto
+    margin-top: 10px
+  .link-box.active
+   img
+    opacity: 1
+  .link-box:hover
+   img
+    opacity: 1
+ h4
+  font-size: 50px
+  font-family: 'Bebas Neue'
+  max-width: 1300px
+  margin: 140px auto 60px auto
+ .solutions-list
+  max-width: 1300px
+  margin: auto
+  background: #dbdbeb
+  .decoration-bottom
+   content: ''
+   width: 100%
+   background: linear-gradient(89.99deg, rgba(80, 80, 153, 0.5) 0.01%, #53539C 22.92%, #208BC9 50.52%, #1DA29E 99.99%)
+   border-radius: 10px
+   height: 5px
+   margin: 50px 0
+  .solution
+   display: flex
+   column-gap: 60px
+   padding-top: 50px
+   h5
+    font-size: 20px
+    color: rgba(41, 42, 98, 1)
+    margin: 0
+    margin-bottom: 10px
+    max-width: 920px
+   span
+    color: rgba(135, 135, 148, 1)
+    font-size: 12px
+    max-width: 450px
+    display: inline-block
+
+@media screen and ( max-width: 1920px )
+ .best-solutions
+  .title
+   padding-left: 15.3%    
+
+@media screen and ( max-width: 1440px )
+ .best-solutions
+  .title
+   padding-left: 5.3% 
+   font-size: 60px     
+  h4
+    padding-left: 5.3% 
+    margin: 80px 0
+  .solutions-list
+    margin: 0 60px  
+  .solution-text
+    padding-right: 20px   
+
+@media screen and ( max-width: 1000px )
+ .best-solutions
+  .title
+   padding-left: 5.3% 
+   font-size: 40px     
+  h4
+    font-size: 28px
+  .nominees-links
+    max-width: 450px
+    flex-wrap: wrap
+    column-gap: 20px
+    row-gap: 30px
+    margin-top: 80px
+  .solutions-list
+    .solution
+      h5
+        font-size: 16px   
+
+@media screen and ( max-width: 600px )
+ .best-solutions
+  .title
+   padding-left: 5.3% 
+   font-size: 32px     
+  h4
+    font-size: 22px
+  .nominees-links
+    padding: 0 20px
+    max-width: 450px
+    flex-wrap: wrap
+    column-gap: 45px
+    row-gap: 30px
+    margin-top: 80px
+    .link-box
+      width: 80px
+  .solutions-list
+    margin: 0
+    .solution
+      flex-direction: column
+      img
+        width: 35%
+        padding-left: 60px
+      h5
+        font-size: 16px  
+      .solution-text
+        padding: 0 60px           
