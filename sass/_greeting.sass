@@ -34,6 +34,18 @@
    align-items: center
    justify-content: center
    column-gap: 15px
+  .back
+    width: 240px 
+    left: 0
+    right: auto
+    bottom: -100px
+    .back-arrow
+      content: ''
+      width: 10px
+      height: 10px
+      border-bottom: 1.5px solid white
+      border-left: 1.5px solid white
+      transform: rotate(45deg)
  &__arrow
   content: ''
   width: 9px
@@ -75,9 +87,88 @@
    font-size: 20px
    max-width: 788px 
  &__full
+  position: relative
   padding-top: 300px  
   padding-bottom: 80px
   max-width: 940px
   margin-left: auto
   font-size: 20px
   padding-right: 100px
+$breakpoints: (xs-phone: 320px, phone: 500px, tablet: 1260px, desktop: 1880px)
+@include media (">tablet", "<desktop") 
+ .greeting
+  .title
+    padding-left: 15.3%
+  &__container
+    width: 90%  
+
+@include media (">phone", "<tablet") 
+ .greeting
+  .title
+    width: 100%
+    font-size: 8vw
+  &__container
+    width: calc( 100% - 80px )
+    margin: 100px auto 0 auto
+    min-height: 630px
+    a
+      right: 20px
+      bottom: 20px
+    .back
+      bottom: 15px
+      left: 70px  
+  &__box
+    flex-direction: column
+    align-items: center
+    right: 50%
+    transform: translateX(50%)
+  &__photo  
+    width: 320px
+    height: 230px 
+  &__content
+    padding: 0 20px
+    h3
+      font-size: 5vw   
+      margin-top: 40px   
+      margin-bottom: 20px
+    p
+      font-size: 16px
+  &__full
+    padding-top: 560px
+    padding-left: 70px
+    font-size: 16px
+@include media (">xs-phone", "<phone") 
+ .greeting
+  .title
+    width: 100%
+    font-size: 8vw
+  &__container
+    width: calc( 100% - 40px )
+    margin: 100px auto 0 auto
+    min-height: 630px
+    a
+      right: 20px
+      bottom: 20px
+    .back
+      bottom: 15px
+      left: 70px   
+  &__box
+    flex-direction: column
+    align-items: center
+    right: 50%
+    transform: translateX(50%)
+  &__photo  
+    width: 240px
+    height: 160px 
+  &__content
+    padding: 0 20px
+    h3
+      font-size: 5vw   
+      margin-top: 40px   
+      margin-bottom: 20px
+    p
+      font-size: 16px    
+  &__full
+    padding-top: 560px
+    padding-left: 70px
+    font-size: 16px      
